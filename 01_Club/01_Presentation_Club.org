@@ -1,0 +1,82 @@
+#+STARTUP: hidestars
+
+#+TITLE: Bitcoin Club
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: May 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* Why? How? What?
+  #+ATTR_REVEAL: :frag (appear)
+  - *Why?*
+    #+ATTR_REVEAL: :frag (appear)
+    I want to live in the world where people have /control/ over and /responsibility/ for what they value
+  - *How?*
+    #+ATTR_REVEAL: :frag (appear)
+    Educate people how to possess and operate with bitcoin /securely/ and /privately/
+  - *What?*
+    #+ATTR_REVEAL: :frag (appear)
+    The club
+#+BEGIN_NOTES
+If people have control, they naturally grow responsibilities.
+It will result in a safer, healthier, happier and better world.
+
+You in control what information you share and with whom.
+Do not expect that a government agency will educate you or your kids will be tough??? it in school.
+That is not what they will give us, but what we have to take ourselves.
+
+I will provide information, give advice. The first point of contact regarding related questions.
+#+END_NOTES
+* Goal
+#+ATTR_REVEAL: :frag (appear)
+*I want to build a club*
+#+ATTR_REVEAL: :frag (appear)
+ - where we discuss simple and basic, hard and challenging questions about bitcoin
+ - where we solve technical issues with bitcoin operations
+* Myself
+I have been learning bitcoin for *2.5* years
+ - Podcasts, videos
+ - Books, articles
+ - Meetups, conferences
+ - Code, build
+#+BEGIN_NOTES
+Bitcoin has changed me.
+Nothing is black or white, everything is a shadow of gray. There are no ultimate answers.
+I learned a lot and I what to share my knowledge, experience, insights.
+#+END_NOTES
+#+REVEAL: split
+My statistic of listening to bitcoin podcasts
+#+REVEAL_HTML: <img src="imgs/podcasts-stat.png"/>
+* You
+  - What do you know about bitcoin?
+  - What do you like to learn?
+* Welcome to the Club
+#+ATTR_REVEAL: :frag (appear)
+Meeting every two weeks
+  #+ATTR_REVEAL: :frag (appear)
+  - My presentation (20 min)
+  - Q&A session (20 min)
+  - Workshop (20 min)
+#+BEGIN_NOTES
+New information, news.
+At the beginning I expect a lot of different questions.
+Bitcoin is not an abstract thing, but requires practice.
+#+END_NOTES
+* Why Not a Single Talk?
+  #+ATTR_REVEAL: :frag (appear)
+  - Not possible to put this content into a single talk, lecture or workshop
+  - Changing of *core beliefs* takes 1–2 years
+* Slides and Notes
+  - Slides and notes will be available at https://github.com/AndreiIvanitskii/BitcoinClub
+  - Licensed under [[../LICENSE][Creative Commons Zero 1.0 Universal]]
+* Disclaimer
+  - Opinions are mine
+  - Not a financial or legal advice
+  - Associated with financial risks
+* Questions?
