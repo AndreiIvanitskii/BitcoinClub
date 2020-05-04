@@ -1,0 +1,51 @@
+#+STARTUP: hidestars
+
+#+TITLE: What is Bitcoin?
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: May 7, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* Bitcoin is ...
+#+ATTR_REVEAL: :frag (appear)
+A cryptocurrency using blockchain technology as a ledger to record transactions
+#+BEGIN_NOTES
+Many fancy words revealing some technical aspects, but completely missing the essence.
+#+END_NOTES
+* Bitcoin is Hard
+#+REVEAL_HTML: <img src="imgs/many-sides-of-bitcoin.png" height="500" class="fragment appear" />
+#+BEGIN_NOTES
+Bitcoin is a multi-dimensional thing.
+#+END_NOTES
+* Why so Complex?
+  - Unnecessary complexity?
+  - Solve a problem which does not exist?
+* Bitcoin is ...
+#+ATTR_REVEAL: :frag (appear)
+*Money*
+  #+ATTR_REVEAL: :frag (appear)
+  - What is money?
+  - Why is bitcoin money?
+  - Why is bitcoin better money?
+* Money
+#+ATTR_REVEAL: :frag (appear)
+A language to communicate *value* in /space/ and /time/
+  #+ATTR_REVEAL: :frag (appear)
+  - Store of value
+  - Medium of exchange
+  - Unit of account
+* Many Sides of Bitcoin
+#+REVEAL_HTML: <img src="imgs/token-network-protocol.png" height="500" />
+#+BEGIN_NOTES
+The goal of the presentation is to scare you.
+Bitcoin is hard.
+It is not possible to grasp it in a session or two.
+It is a long journey.
+#+END_NOTES
+* Question?
