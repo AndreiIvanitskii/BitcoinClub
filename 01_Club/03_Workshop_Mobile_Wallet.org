@@ -1,0 +1,61 @@
+#+TITLE: Mobile Wallet
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: May 7, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+* Preparation
+  - Get your phone (Android or IPhone)
+  - Get a piece of paper and a pen or a pencil
+* Installation
+  - Go to https://blockstream.com/green/
+  - [[./imgs/qr-blockstream-com-green.png]]
+  - Follow App Store or Google Play link
+  - Install the wallet
+* Testnet Setup
+  - Open the app
+  - Tap on "Bitcoin"
+  - Select "Testnet", save
+* Create New Wallet
+  - Tap "Create New Wallet"
+  - Write down the seed
+  - Test the seed
+  - Generate PIN
+  - Skip 2FA setup
+*Warning:* The setup is insecure if your laptop camera or mic is on!
+* Prepare to Receive Coins
+  - Tap "RECEIVE"
+  - Copy the address (e.g. ~2N8aR3Fto...~) (tap to copy)
+* Get Testnet Bitcoin
+  - Go to https://testnet-faucet.mempool.co/
+  - [[./imgs/qr-testnet-faucet.png]]
+  - Solve captcha
+  - Enter the copied address
+  - Tap "Send"
+  - It should display "Transaction sent"
+* Check Your Coins
+  - Go back to the wallet
+  - Wait for the transaction to appear on the main screen
+  - Once it appears is will be marked "Unconfirmed" for a couple of minutes
+  - You do *not* need to wait for the transaction to be confirmed to spend coins
+* Send Coins
+  - Tap "SEND" (allow camera access if asked)
+  - Send to ~2N8aR3FtoZtL1qvAoUz925jJyFfXPnHgW5r~
+  - [[./imgs/qr-testnet-address.png]]
+  - Enter *0.0001* as amount
+  - Tap "Review", slide to send
+* Workshop Review
+  - Set the mobile wallet up
+  - Received coins
+  - Sent coins
+#+BEGIN_NOTES
+In a matter of 20 minutes we managed to install a mobile wallet.
+Received and sent testnet coins.
+No permissions or credential were required. No KYC.
+#+END_NOTES
+* Questions?

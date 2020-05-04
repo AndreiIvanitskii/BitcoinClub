@@ -14,11 +14,11 @@
 
 * Bitcoin is ...
 #+ATTR_REVEAL: :frag (appear)
-A cryptocurrency using blockchain technology as a ledger to record transactions
+a cryptocurrency using blockchain technology as a ledger to record transactions
 #+BEGIN_NOTES
 Many fancy words revealing some technical aspects, but completely missing the essence.
 #+END_NOTES
-* Bitcoin is Hard
+* Many Sides of Bitcoin
 #+REVEAL_HTML: <img src="imgs/many-sides-of-bitcoin.png" height="500" class="fragment appear" />
 #+BEGIN_NOTES
 Bitcoin is a multi-dimensional thing.
@@ -26,6 +26,9 @@ Bitcoin is a multi-dimensional thing.
 * Why so Complex?
   - Unnecessary complexity?
   - Solve a problem which does not exist?
+#+BEGIN_NOTES
+There is a simple answer.
+#+END_NOTES
 * Bitcoin is ...
 #+ATTR_REVEAL: :frag (appear)
 *Money*
@@ -35,7 +38,7 @@ Bitcoin is a multi-dimensional thing.
   - Why is bitcoin better money?
 * Money
 #+ATTR_REVEAL: :frag (appear)
-A language to communicate *value* in /space/ and /time/
+A language to communicate *value* in /time/ and /space/
   #+ATTR_REVEAL: :frag (appear)
   - Store of value
   - Medium of exchange
@@ -43,9 +46,18 @@ A language to communicate *value* in /space/ and /time/
 * Many Sides of Bitcoin
 #+REVEAL_HTML: <img src="imgs/token-network-protocol.png" height="500" />
 #+BEGIN_NOTES
-The goal of the presentation is to scare you.
-Bitcoin is hard.
+token, traded, price, emission rate
+network, nodes, miners
+protocol
+#+END_NOTES
+* Summary
+  - Bitcoin is money
+  - Money is hard
+#+BEGIN_NOTES
+The goal of the presentation is not to scare you, but explain why bitcoin is hard.
 It is not possible to grasp it in a session or two.
 It is a long journey.
+In the next meetings we will be discussing all these aspects in details.
+Over time you will develop a solid understanding.
 #+END_NOTES
-* Question?
+* Questions?
