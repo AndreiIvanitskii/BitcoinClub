@@ -46,18 +46,18 @@ A language to communicate *value* in /time/ and /space/
 * Many Sides of Bitcoin
 #+REVEAL_HTML: <img src="imgs/token-network-protocol.png" height="500" />
 #+BEGIN_NOTES
-token, traded, price, emission rate
-network, nodes, miners
-protocol
+ - Token: trade, price, emission rate
+ - Network: nodes, miners, who can join and participate?
+ - Protocol: what is defined and how?
 #+END_NOTES
 * Summary
   - Bitcoin is money
   - Money is hard
 #+BEGIN_NOTES
-The goal of the presentation is not to scare you, but explain why bitcoin is hard.
-It is not possible to grasp it in a session or two.
-It is a long journey.
-In the next meetings we will be discussing all these aspects in details.
-Over time you will develop a solid understanding.
+ - The goal of the presentation is not to scare you, but explain why bitcoin is hard.
+   It is not possible to grasp it in a session or two.
+   It is a long journey.
+ - In the next meetings we will be discussing all these aspects in details.
+ - Over time you will develop a solid understanding.
 #+END_NOTES
 * Questions?

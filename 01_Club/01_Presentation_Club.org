@@ -28,7 +28,7 @@ If people have control, they naturally grow responsibilities.
 It will result in a safer, healthier, happier and better world.
 
 You in control what information you share and with whom.
-Do not expect that a government agency will educate you or your kids will be tough??? it in school.
+Do not expect that a government agency will educate you or your kids will be taught it in school.
 That is not what they will give us, but what we have to take ourselves.
 
 I will provide information, give advice. The first point of contact regarding related questions.
@@ -46,9 +46,9 @@ I have been learning bitcoin for *2.5* years
  - Meetups, conferences
  - Code, build
 #+BEGIN_NOTES
-Bitcoin has changed me.
-Nothing is black or white, everything is a shadow of gray. There are no ultimate answers.
-I learned a lot and I what to share my knowledge, experience, insights.
+ - Bitcoin has changed me.
+ - Nothing is black or white, everything is a shadow of gray. There are no ultimate answers.
+ - I learned a lot and I what to share my knowledge, experience, insights.
 #+END_NOTES
 #+REVEAL: split
 My statistic of listening to bitcoin podcasts
@@ -64,9 +64,9 @@ Meeting every two weeks
   - Q&A session (20 min)
   - Workshop (20 min)
 #+BEGIN_NOTES
-New information, news.
-At the beginning I expect a lot of different questions.
-Bitcoin is not an abstract thing, but requires practice.
+ - New information, news.
+ - At the beginning I expect a lot of different questions.
+ - Bitcoin is not an abstract thing, but requires practice.
 #+END_NOTES
 * Why Not a Single Talk?
   #+ATTR_REVEAL: :frag (appear)

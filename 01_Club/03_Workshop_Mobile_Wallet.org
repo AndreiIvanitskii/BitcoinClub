@@ -54,8 +54,8 @@
   - Received coins
   - Sent coins
 #+BEGIN_NOTES
-In a matter of 20 minutes we managed to install a mobile wallet.
-Received and sent testnet coins.
-No permissions or credential were required. No KYC.
+ - In a matter of 20 minutes we managed to install a mobile wallet.
+ - Received and sent testnet coins.
+ - No permissions or credential were required. No KYC.
 #+END_NOTES
 * Questions?
