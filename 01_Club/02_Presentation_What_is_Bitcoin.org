@@ -18,8 +18,11 @@ a cryptocurrency using blockchain technology as a ledger to record transactions
 #+BEGIN_NOTES
 Many fancy words revealing some technical aspects, but completely missing the essence.
 #+END_NOTES
+
 * Many Sides of Bitcoin
-#+REVEAL_HTML: <img src="imgs/token-network-protocol.png" height="500" class="fragment appear" />
+#+ATTR_REVEAL: :frag (appear)
+#+ATTR_HTML: :alt Token, network, protocol :height 500;
+[[./imgs/token-network-protocol.png]]
 #+BEGIN_NOTES
  - Token: trade, price, emission rate
  - Network: nodes, miners, who can join and participate?
@@ -27,16 +30,19 @@ Many fancy words revealing some technical aspects, but completely missing the es
 #+END_NOTES
 
 ** Many Sides of Bitcoin
-#+REVEAL_HTML: <img src="imgs/many-sides-of-bitcoin.png" height="500" />
+#+ATTR_HTML: :alt Many sides of bitcoin :height 500;
+[[./imgs/many-sides-of-bitcoin.png]]
 #+BEGIN_NOTES
 Bitcoin is a multi-dimensional thing.
 #+END_NOTES
+
 * Why so Complex?
   - Unnecessary complexity?
   - Solve a problem which does not exist?
 #+BEGIN_NOTES
 There is a simple answer.
 #+END_NOTES
+
 * Bitcoin is ...
 #+ATTR_REVEAL: :frag (appear)
 *Money*
@@ -44,6 +50,7 @@ There is a simple answer.
   - What is money?
   - Why is bitcoin money?
   - Why is bitcoin better money?
+
 * Money
 #+ATTR_REVEAL: :frag (appear)
 A language to communicate *value* in /time/ and /space/
@@ -53,6 +60,7 @@ Roles:
   - Store of value
   - Medium of exchange
   - Unit of account
+
 * Summary
   - Bitcoin is money
   - Money is hard
@@ -63,4 +71,5 @@ Roles:
  - In the next meetings we will be discussing all these aspects in details.
  - Over time you will develop a solid understanding.
 #+END_NOTES
+
 * Questions?

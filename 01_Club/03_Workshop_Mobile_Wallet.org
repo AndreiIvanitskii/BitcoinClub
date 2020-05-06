@@ -13,8 +13,8 @@
   - Get your phone (Android or IPhone)
   - Get a piece of paper and a pen or a pencil
 * Installation
-  - Go to https://blockstream.com/green/
-  - [[./imgs/qr-blockstream-com-green.png]]
+  - Go to https://blockstream.com/green/\\
+    [[./imgs/qr-blockstream-com-green.png]]
   - Follow App Store or Google Play link
   - Install the wallet
 * Testnet Setup
@@ -32,8 +32,8 @@
   - Tap "RECEIVE"
   - Copy the address (e.g. ~2N8aR3Fto...~) (tap to copy)
 * Get Testnet Bitcoin
-  - Go to https://testnet-faucet.mempool.co/
-  - [[./imgs/qr-testnet-faucet.png]]
+  - Go to https://testnet-faucet.mempool.co/\\
+    [[./imgs/qr-testnet-faucet.png]]
   - Solve captcha
   - Enter the copied address
   - Tap "Send"
@@ -45,8 +45,8 @@
   - You do *not* need to wait for the transaction to be confirmed to spend coins
 * Send Coins
   - Tap "SEND" (allow camera access if asked)
-  - Send to ~2N8aR3FtoZtL1qvAoUz925jJyFfXPnHgW5r~
-  - [[./imgs/qr-testnet-address.png]]
+  - Send to ~2N8aR3FtoZtL1qvAoUz925jJyFfXPnHgW5r~\\
+    [[./imgs/qr-testnet-address.png]]
   - Enter *0.0001* as amount
   - Tap "Review", slide to send
 * Workshop Review
