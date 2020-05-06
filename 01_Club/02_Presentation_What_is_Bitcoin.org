@@ -19,7 +19,15 @@ a cryptocurrency using blockchain technology as a ledger to record transactions
 Many fancy words revealing some technical aspects, but completely missing the essence.
 #+END_NOTES
 * Many Sides of Bitcoin
-#+REVEAL_HTML: <img src="imgs/many-sides-of-bitcoin.png" height="500" class="fragment appear" />
+#+REVEAL_HTML: <img src="imgs/token-network-protocol.png" height="500" class="fragment appear" />
+#+BEGIN_NOTES
+ - Token: trade, price, emission rate
+ - Network: nodes, miners, who can join and participate?
+ - Protocol: what is defined and how?
+#+END_NOTES
+
+** Many Sides of Bitcoin
+#+REVEAL_HTML: <img src="imgs/many-sides-of-bitcoin.png" height="500" />
 #+BEGIN_NOTES
 Bitcoin is a multi-dimensional thing.
 #+END_NOTES
@@ -39,17 +47,12 @@ There is a simple answer.
 * Money
 #+ATTR_REVEAL: :frag (appear)
 A language to communicate *value* in /time/ and /space/
+#+ATTR_REVEAL: :frag (appear)
+Roles:
   #+ATTR_REVEAL: :frag (appear)
   - Store of value
   - Medium of exchange
   - Unit of account
-* Many Sides of Bitcoin
-#+REVEAL_HTML: <img src="imgs/token-network-protocol.png" height="500" />
-#+BEGIN_NOTES
- - Token: trade, price, emission rate
- - Network: nodes, miners, who can join and participate?
- - Protocol: what is defined and how?
-#+END_NOTES
 * Summary
   - Bitcoin is money
   - Money is hard
