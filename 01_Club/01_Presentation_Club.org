@@ -79,6 +79,6 @@ Meeting every two weeks
   - Licensed under [[../LICENSE][Creative Commons Zero 1.0 Universal]]
 * Disclaimer
   - Opinions are mine
-  - Not a financial or legal advice
+  - Not financial or legal advice
   - Associated with financial risks
 * Questions?
