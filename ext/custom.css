@@ -11,3 +11,8 @@
 .section-number-3 {
     display: none;
 }
+
+.keyboard-usage p {
+    color: #999999;
+    font-size: 25px;
+}
