@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Mobile Wallet</title>
+<meta name="author" content="Andrei Ivanitskii"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./imgs/pixabay/smartphone.jpg">
+<h1>Mobile Wallet</h1>
+<h3>Andrei Ivanitskii</h3>
+<h4>May 7, 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Preparation</h2>
+<ul>
+<li>Get your phone (Android or IPhone)</li>
+<li>Get a piece of paper and a pen or a pencil</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Installation</h2>
+<ul>
+<li>Go to <a href="https://blockstream.com/green/">https://blockstream.com/green/</a><br />
+<img src="./imgs/qr-blockstream-com-green.png" alt="qr-blockstream-com-green.png" /></li>
+<li>Follow App Store or Google Play link</li>
+<li>Install the wallet</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Testnet Setup</h2>
+<ul>
+<li>Open the app</li>
+<li>Tap on "Bitcoin"</li>
+<li>Select "Testnet", save</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Create New Wallet</h2>
+<ul>
+<li>Tap "Create New Wallet"</li>
+<li>Write down the seed</li>
+<li>Test the seed</li>
+<li>Generate PIN</li>
+<li>Skip 2FA setup</li>
+
+</ul>
+<p>
+<b>Warning:</b> The setup is insecure if your laptop camera or mic is on!
+</p>
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Prepare to Receive Coins</h2>
+<ul>
+<li>Tap "RECEIVE"</li>
+<li>Copy the address (e.g. <code>2N8aR3Fto...</code>) (tap to copy)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Get Testnet Bitcoin</h2>
+<ul>
+<li>Go to <a href="https://testnet-faucet.mempool.co/">https://testnet-faucet.mempool.co/</a><br />
+<img src="./imgs/qr-testnet-faucet.png" alt="qr-testnet-faucet.png" /></li>
+<li>Solve captcha</li>
+<li>Enter the copied address</li>
+<li>Tap "Send"</li>
+<li>It should display "Transaction sent"</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-7">
+<h2 id="7"><span class="section-number-2">7</span> Check Your Coins</h2>
+<ul>
+<li>Go back to the wallet</li>
+<li>Wait for the transaction to appear on the main screen</li>
+<li>Once it appears is will be marked "Unconfirmed" for a couple of minutes</li>
+<li>You do <b>not</b> need to wait for the transaction to be confirmed to spend coins</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-8">
+<h2 id="8"><span class="section-number-2">8</span> Send Coins</h2>
+<ul>
+<li>Tap "SEND" (allow camera access if asked)</li>
+<li>Send to <code>2N8aR3FtoZtL1qvAoUz925jJyFfXPnHgW5r</code><br />
+<img src="./imgs/qr-testnet-address.png" alt="qr-testnet-address.png" /></li>
+<li>Enter <b>0.0001</b> as amount</li>
+<li>Tap "Review", slide to send</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-9">
+<h2 id="9"><span class="section-number-2">9</span> Workshop Review</h2>
+<ul>
+<li>Set the mobile wallet up</li>
+<li>Received coins</li>
+<li>Sent coins</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>In a matter of 20 minutes we managed to install a mobile wallet.</li>
+<li>Received and sent testnet coins.</li>
+<li>No permissions or credential were required. No KYC.</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-10">
+<h2 id="10"><span class="section-number-2">10</span> Questions?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>

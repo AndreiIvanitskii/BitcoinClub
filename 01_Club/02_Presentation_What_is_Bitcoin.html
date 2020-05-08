@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>What is Bitcoin?</title>
+<meta name="author" content="Andrei Ivanitskii"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./imgs/pixabay/money.jpg">
+<h1>What is Bitcoin?</h1>
+<h3>Andrei Ivanitskii</h3>
+<h4>May 7, 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+
+</section>
+
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Bitcoin is &#x2026;</h2>
+<p class="fragment (appear)">
+a cryptocurrency using blockchain technology as a ledger to record transactions
+</p>
+<aside class="notes">
+<p>
+Many fancy words revealing some technical aspects, but completely missing the essence.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Many Sides of Bitcoin</h2>
+
+<div class="figure">
+<p><img src="./imgs/token-network-protocol.png" alt="Token, network, protocol" class="fragment (appear)" height="500;" />
+</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Token: trade, price, emission rate</li>
+<li>Network: nodes, miners, who can join and participate?</li>
+<li>Protocol: what is defined and how?</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1</span> Many Sides of Bitcoin</h3>
+
+<div class="figure">
+<p><img src="./imgs/many-sides-of-bitcoin.png" alt="Many sides of bitcoin" height="500;" />
+</p>
+</div>
+<aside class="notes">
+<p>
+Bitcoin is a multi-dimensional thing.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Why so Complex?</h2>
+<ul>
+<li>Unnecessary complexity?</li>
+<li>Solve a problem which does not exist?</li>
+
+</ul>
+<aside class="notes">
+<p>
+There is a simple answer.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Bitcoin is &#x2026;</h2>
+<p class="fragment (appear)">
+<b>Money</b>
+</p>
+<ul>
+<li class="fragment appear">What is money?</li>
+<li class="fragment appear">Why is bitcoin money?</li>
+<li class="fragment appear">Why is bitcoin better money?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Money</h2>
+<p class="fragment (appear)">
+A language to communicate <b>value</b> in <i>time</i> and <i>space</i>
+</p>
+<p class="fragment (appear)">
+Roles:
+</p>
+<ul>
+<li class="fragment appear">Store of value</li>
+<li class="fragment appear">Medium of exchange</li>
+<li class="fragment appear">Unit of account</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Summary</h2>
+<ul>
+<li>Bitcoin is money</li>
+<li>Money is hard</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>The goal of the presentation is not to scare you, but explain why bitcoin is hard.
+It is not possible to grasp it in a session or two.
+It is a long journey.</li>
+<li>In the next meetings we will be discussing all these aspects in details.</li>
+<li>Over time you will develop a solid understanding.</li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-7">
+<h2 id="7"><span class="section-number-2">7</span> Questions?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
