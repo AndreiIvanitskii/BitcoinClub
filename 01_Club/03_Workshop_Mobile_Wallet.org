@@ -6,7 +6,7 @@
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: ../ext/custom.css
 #+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
-
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./imgs/pixabay/smartphone.jpg
 #+OPTIONS: num:t toc:nil reveal_history:t
 
 * Preparation
