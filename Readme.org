@@ -1,4 +1,4 @@
-[[./ext/pixabay/club.jpg]]
+[[./ext/pixabay/club-logo.jpg]]
 * Bitcoin Club
 Here are slides and notes from the club meetings.
 ** Club

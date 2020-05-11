@@ -6,7 +6,7 @@
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: ../ext/custom.css
 #+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
-#+REVEAL_TITLE_SLIDE_BACKGROUND: ./imgs/pixabay/smartphone.jpg
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../ext/pixabay/smartphone.jpg
 #+OPTIONS: num:t toc:nil reveal_history:t
 
 * Preparation
@@ -14,7 +14,7 @@
   - Get a piece of paper and a pen or a pencil
 * Installation
   - Go to https://blockstream.com/green/\\
-    [[./imgs/qr-blockstream-com-green.png]]
+    [[./../imgs/qr-blockstream-com-green.png]]
   - Follow App Store or Google Play link
   - Install the wallet
 * Testnet Setup
@@ -33,7 +33,7 @@
   - Copy the address (e.g. ~2N8aR3Fto...~) (tap to copy)
 * Get Testnet Bitcoin
   - Go to https://testnet-faucet.mempool.co/\\
-    [[./imgs/qr-testnet-faucet.png]]
+    [[./../imgs/qr-testnet-faucet.png]]
   - Solve captcha
   - Enter the copied address
   - Tap "Send"
@@ -46,7 +46,7 @@
 * Send Coins
   - Tap "SEND" (allow camera access if asked)
   - Send to ~2N8aR3FtoZtL1qvAoUz925jJyFfXPnHgW5r~\\
-    [[./imgs/qr-testnet-address.png]]
+    [[./../imgs/qr-testnet-address.png]]
   - Enter *0.0001* as amount
   - Tap "Review", slide to send
 * Workshop Review

@@ -8,7 +8,7 @@
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: ../ext/custom.css
 #+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
-#+REVEAL_TITLE_SLIDE_BACKGROUND: ./imgs/pixabay/club.jpg
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../ext/pixabay/club.jpg
 
 #+OPTIONS: num:t toc:nil reveal_history:t
 
@@ -54,7 +54,7 @@ I have been learning bitcoin for *2.5* years
 #+REVEAL: split
 My statistic of listening to bitcoin podcasts
 #+ATTR_HTML: :alt My statistic of listening to bitcoin podcasts;
-[[./imgs/podcasts-stat.png]]
+[[./../imgs/podcasts-stat.png]]
 * You
   - What do you know about bitcoin?
   - What do you like to learn?

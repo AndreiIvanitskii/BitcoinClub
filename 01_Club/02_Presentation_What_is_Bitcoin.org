@@ -8,7 +8,7 @@
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: ../ext/custom.css
 #+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
-#+REVEAL_TITLE_SLIDE_BACKGROUND: ./imgs/pixabay/money.jpg
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../ext/pixabay/money.jpg
 
 #+OPTIONS: num:t toc:nil reveal_history:t
 
@@ -23,7 +23,7 @@ Many fancy words revealing some technical aspects, but completely missing the es
 * Many Sides of Bitcoin
 #+ATTR_REVEAL: :frag (appear)
 #+ATTR_HTML: :alt Token, network, protocol :height 500;
-[[./imgs/token-network-protocol.png]]
+[[./../imgs/token-network-protocol.png]]
 #+BEGIN_NOTES
  - Token: trade, price, emission rate
  - Network: nodes, miners, who can join and participate?
@@ -32,7 +32,7 @@ Many fancy words revealing some technical aspects, but completely missing the es
 
 ** Many Sides of Bitcoin
 #+ATTR_HTML: :alt Many sides of bitcoin :height 500;
-[[./imgs/many-sides-of-bitcoin.png]]
+[[./../imgs/many-sides-of-bitcoin.png]]
 #+BEGIN_NOTES
 Bitcoin is a multi-dimensional thing.
 #+END_NOTES
