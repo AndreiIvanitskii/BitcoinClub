@@ -74,7 +74,7 @@
   - Невозможно уместить такое количество информации в один доклад
   - Изменение *основных убеждений* занимает 1–2 года
 * Слайды и конспекты
-  - Слайды и конспекты будут доступны по ссылке https://github.com/AndreiIvanitskii/BitcoinClub/Readme_ru.org
+  - Слайды и конспекты будут доступны по ссылке https://github.com/AndreiIvanitskii/BitcoinClub
   - Лицензия [[../LICENSE][Creative Commons Zero 1.0 Universal]]
 * Отказ от ответственности
   - Мои мнения
