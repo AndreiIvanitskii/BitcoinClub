@@ -1,0 +1,31 @@
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    text-transform: none;
+    font-family: "Proxima Nova";
+}
+
+.reveal h1 {
+    font-size: 2.50em;
+}
+
+.reveal h2 {
+    font-size: 1.50em;
+}
+
+.reveal {
+    font-size: 35px;
+}
+
+.section-number-2,
+.section-number-3 {
+    display: none;
+}
+
+.keyboard-usage p {
+    color: #999999;
+    font-size: 25px;
+}

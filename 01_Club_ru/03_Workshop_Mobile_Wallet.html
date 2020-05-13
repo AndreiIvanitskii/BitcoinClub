@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Практика: Мобильный кошелёк</title>
+<meta name="author" content="Андрей Иваницкий"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom-ru.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./../ext/pixabay/smartphone.jpg">
+<h1>Практика: Мобильный кошелёк</h1>
+<h3>Андрей Иваницкий</h3>
+<h4>14 мая 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+<div class="keyboard-usage">
+    <p>(Press <b>?</b> for help, <b>n</b> and <b>p</b> for next and previous slide)</p>
+</div>
+
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Подготовка</h2>
+<ul>
+<li>Смартфон (Android или IPhone)</li>
+<li>Лист бумаги</li>
+<li>Ручка или карандаш</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Установка</h2>
+<ul>
+<li>Посетите <a href="https://blockstream.com/green/">https://blockstream.com/green/</a><br />
+<img src="./../imgs/qr-blockstream-com-green.png" alt="qr-blockstream-com-green.png" /></li>
+<li>Пройдите по ссылке на App Store или Google Play</li>
+<li>Установите кошелёк</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Testnet конфигурация</h2>
+<ul>
+<li>Откройте приложение</li>
+<li>Нажмите на "Bitcoin"</li>
+<li>Выберите "Testnet", сохраните</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Создание нового кошелёка</h2>
+<ul>
+<li>Нажмите "Создать новый кошелёк" / "Create New Wallet"</li>
+<li>Запишите мнемоническую фразу</li>
+<li>Проверте фразу</li>
+<li>Создайте PIN</li>
+<li>Пропустите шаг установки двухфакторной аунтефикаиции</li>
+
+</ul>
+<p>
+<b>Внимание:</b> Такой процесс ненадёжен, если работала камера или микрофон вашего ноутбука!
+</p>
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Приготовление для получения монет</h2>
+<ul>
+<li>Нажмите Получить / "RECEIVE"</li>
+<li>Скопируйте адрес (пр. <code>2N8aR3Fto...</code>) (нажмите чтоб скопировать)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Получение Testnet Bitcoin</h2>
+<ul>
+<li>Посетите <a href="https://testnet-faucet.mempool.co/">https://testnet-faucet.mempool.co/</a><br />
+<img src="./../imgs/qr-testnet-faucet.png" alt="qr-testnet-faucet.png" /></li>
+<li>Решите капчу</li>
+<li>Введите скопированный адрес</li>
+<li>Нажмите "Send"</li>
+<li>Долно отобразиться "Transaction sent"</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-7">
+<h2 id="7"><span class="section-number-2">7</span> Проверка ваших монет</h2>
+<ul>
+<li>Вернитесь в кошелёк</li>
+<li>Дождитесь появления транзакции на главном экране приложения</li>
+<li>Когда она появится, в течении нескольких минут она будет помечена "Неподтвержденная" / "Unconfirmed"</li>
+<li>Вым не надо дожидаться подтверждения транзакции, чтоб послать монеты</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-8">
+<h2 id="8"><span class="section-number-2">8</span> Посылка монет</h2>
+<ul>
+<li>Нажмите "Отправить" / "SEND" (разрешите доступ к камере, если потребутеся)</li>
+<li>Введите адрес <code>2N8aR3FtoZtL1qvAoUz925jJyFfXPnHgW5r</code><br />
+Или отсканируйте код <img src="./../imgs/qr-testnet-address.png" alt="qr-testnet-address.png" /></li>
+<li>Введите <b>0.0001</b> в поле сумма</li>
+<li>Нажмите "Обзор" / "Review", смахните, чтобы отправить</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-9">
+<h2 id="9"><span class="section-number-2">9</span> Обзор практической части</h2>
+<ul>
+<li>Установили мобильный кошелёк</li>
+<li>Получили монеты</li>
+<li>Отправили монеты</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Не потребовалось никаких разрешений, аккаунтов. Не требовалось проходить проверки (KYC).</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-10">
+<h2 id="10"><span class="section-number-2">10</span> Вопросы?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>

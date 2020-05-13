@@ -1,0 +1,7 @@
+[[./ext/pixabay/club-logo.jpg]]
+* Биткоин Клуб
+Здесь представлены слайды и материалы со встреч клуба.
+** Клуб
+   - Презентация: Биткоин Клуб ([[./01_Club/01_Presentation_Club.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club_ru/01_Presentation_Club.html][вид слайдов]])
+   - Презентация: Что токое биткоин? ([[./01_Club/02_Presentation_What_is_Bitcoin.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club_ru/02_Presentation_What_is_Bitcoin.html][вид слайдов]])
+   - Практика: Мобильный кошелёк ([[./01_Club/03_Workshop_Mobile_Wallet.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club_ru/03_Workshop_Mobile_Wallet.html][вид слайдов]])

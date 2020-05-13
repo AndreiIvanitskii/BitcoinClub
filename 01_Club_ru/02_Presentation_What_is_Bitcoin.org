@@ -1,0 +1,76 @@
+#+STARTUP: hidestars
+
+#+TITLE: Что такое биткоин?
+#+AUTHOR: Андрей Иваницкий
+#+DATE: 14 мая 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom-ru.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../ext/pixabay/money.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* Биткоин это ...
+#+ATTR_REVEAL: :frag (appear)
+криптовалюта, использующая технологию блокчейна для записи транзакций
+#+BEGIN_NOTES
+Many fancy words revealing some technical aspects, but completely missing the essence.
+#+END_NOTES
+
+* Много сторон биткоина
+#+ATTR_REVEAL: :frag (appear)
+#+ATTR_HTML: :alt Токен, сеть, протокол :height 500;
+[[./../imgs/token-network-protocol-ru.png]]
+#+BEGIN_NOTES
+ - Токен: торги, цена, эмиссия
+ - Сеть: ноды (участники), майнеры, кто может присоединиться и участвовать?
+ - Прокотол: что определено и как?
+#+END_NOTES
+
+** Много сторон биткоина
+#+ATTR_HTML: :alt Много сторон биткоина :height 500;
+[[./../imgs/many-sides-of-bitcoin-ru.png]]
+#+BEGIN_NOTES
+Биткоин это многосторонний концепт.
+#+END_NOTES
+
+* Почему так сложно?
+  - Ненужная сложность?
+  - Решает проблему, которой не существует?
+#+BEGIN_NOTES
+Есть простой ответ.
+#+END_NOTES
+
+* Биткоин это ...
+#+ATTR_REVEAL: :frag (appear)
+*Деньги*
+  #+ATTR_REVEAL: :frag (appear)
+  - Что такое деньги?
+  - Почему биткоин это деньги?
+  - Почему биткоин это более лучшие деньги?
+
+* Деньги
+#+ATTR_REVEAL: :frag (appear)
+Язык для коммуникации *ценности* во /веремени/ и /пространстве/
+#+ATTR_REVEAL: :frag (appear)
+Роли:
+  #+ATTR_REVEAL: :frag (appear)
+  - Сохранение ценности (стоимости)
+  - Средство обмена
+  - Единица измерения
+
+* Резюме
+  - Биткоин это деньги
+  - Деньги это сложно
+#+BEGIN_NOTES
+ - Цель презентации не напугать вас, но объяснить, почему биткоин это сложно.\\
+   Это невозможно охватить за один или два подхода.\\
+   Это долгое путешествие.
+ - На следующих встречах мы будем обсуждать все аспекты биткоина в деталях.
+ - Через некоторое время вы сформируете чёткое и полное представление о биткоине.
+#+END_NOTES
+
+* Вопросы?

@@ -2,6 +2,6 @@
 * Bitcoin Club
 Here are slides and notes from the club meetings.
 ** Club
-   - Presentation: Bitcoin Club ([[./01_Club/01_Presentation_Club.org][onepage view]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club/01_Presentation_Club.html][presenation view]])
-   - Presentation: What st is Bitcoin? ([[./01_Club/02_Presentation_What_is_Bitcoin.org][onepage view]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club/02_Presentation_What_is_Bitcoin.html][presenation view]])
-   - Workshop: Mobile Wallet ([[./01_Club/03_Workshop_Mobile_Wallet.org][onepage view]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club/03_Workshop_Mobile_Wallet.html][presenation view]])
+   - Presentation: Bitcoin Club ([[./01_Club/01_Presentation_Club.org][onepage view]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club/01_Presentation_Club.html][presentation view]])
+   - Presentation: What st is Bitcoin? ([[./01_Club/02_Presentation_What_is_Bitcoin.org][onepage view]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club/02_Presentation_What_is_Bitcoin.html][presentation view]])
+   - Workshop: Mobile Wallet ([[./01_Club/03_Workshop_Mobile_Wallet.org][onepage view]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club/03_Workshop_Mobile_Wallet.html][presentation view]])
