@@ -17,7 +17,7 @@
 #+ATTR_REVEAL: :frag (appear)
 криптовалюта, использующая технологию блокчейна для записи транзакций
 #+BEGIN_NOTES
-Many fancy words revealing some technical aspects, but completely missing the essence.
+Много умных слов раскрывающие некоторые технические аспекты, но совершенно упускающие суть.
 #+END_NOTES
 
 * Много сторон биткоина
@@ -54,7 +54,7 @@ Many fancy words revealing some technical aspects, but completely missing the es
 
 * Деньги
 #+ATTR_REVEAL: :frag (appear)
-Язык для коммуникации *ценности* во /веремени/ и /пространстве/
+Язык для коммуникации *ценности* во /времени/ и /пространстве/
 #+ATTR_REVEAL: :frag (appear)
 Роли:
   #+ATTR_REVEAL: :frag (appear)
