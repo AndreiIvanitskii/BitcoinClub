@@ -7,8 +7,16 @@
     text-transform: none;
 }
 
+code {
+    font-size: 70%;
+    background-color: #001b26;
+    padding: 4px 10px;
+}
+
 .section-number-2,
-.section-number-3 {
+.section-number-3,
+.section-number-4,
+.section-number-5 {
     display: none;
 }
 

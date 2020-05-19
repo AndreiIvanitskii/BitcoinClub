@@ -1,0 +1,129 @@
+#+STARTUP: hidestars
+
+#+TITLE: Money
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: May 21, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ../imgs/stone-money.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* History of Money
+#+ATTR_REVEAL: :frag (appear)
+#+BEGIN_NOTES
+Note
+#+END_NOTES
+* Prehistory — Barter
+*Direct exchange* of good or services without using a /medium of exchange/ (such as money).
+Limitations
+  - difficult to find a match (does not scale)
+  - not always feasible (how many apples for a horse?)
+  - no common measure of value
+#+BEGIN_NOTES
+Barter uses to work in ancient societies when the number of different goods or services were low.
+Lack of common measure of value makes difficult to make economic calculations.
+#+END_NOTES
+
+* Primitive Money
+** Cowrie Shells
+The most scarcest and hardest to find.
+** Alternative
+** Problems With Primitive Money
+They are not universal.
+When people from forest met people from cost lines economics could collapse.
+
+* Commodity Money
+** Grains
+Pros
+  - scarce
+  - fairly easy to transport
+  - *divisible*
+  - *more universal than seashells*
+Cons
+  - not really universal (differ in quality, size, type)
+  - not easy to store
+** Gold
+Pros
+  - really scarce
+  - universal
+  - divisible
+  - easy to transport
+  - *easy to store*
+Cons
+  - not easy to verify
+  - not divisible enough
+** Silver, Copper
+That is why *Silver* and *Copper* arose.
+*Not* because they are good money, but because *gold* was not good enough.
+
+* Representative Money
+A medium of exchange that represents something of value, but has little or no value of its own.
+Pros
+  - scarce (as value they represent)
+  - universal (as value they represent)
+  - divisible
+  - easy to transport
+  - easy to store
+  - *easy to verify*
+
+** What is Wrong with Representative Money?
+#+ATTR_REVEAL: :frag (appear)
+*Trust*
+#+ATTR_REVEAL: :frag (appear)
+As any promise it will be broken...
+#+BEGIN_NOTES
+ - We have to trust (a bank, a government) to keep the promise to exchange the money for the value they represent.
+ - It happened many times in the human history.
+ - The most recent and the most notable is ending of the Gold standard in the US.
+#+END_NOTES
+
+** Example: Gold Standard in the US
+*** Gold Standard
+[[../imgs/gold-certificate.jpg]]\\
+#+ATTR_REVEAL: :frag (appear)
+"Fifty dollars in gold coin payable to the bearer on demand"
+*** Executive Order 6102
+On April 5, 1933 by President Franklin D. Roosevelt\\
+/"forbidding the hoarding of gold coin, gold bullion, and gold certificates within the continental United States"/
+*** "Nixon Shock"
+On August 15, 1971 by president Richard Nixon ended international convertibility of the U.S. dollar to gold
+*** Federal Reserve Note
+[[../imgs/50-usd-note.jpg]]\\
+#+ATTR_REVEAL: :frag (appear)
+"This note is legal tender for all debts, public and private"
+*** What Happened Next?
+[[../imgs/mc-donalds-menu-1971.jpg]]\\
+McDonald's menu from 1971
+#+ATTR_REVEAL: :frag (appear)
+See more examples and analysis at [[https://wtfhappenedin1971.com][WtfHappenedIn1971.com]]
+
+* Fiat Money
+#+ATTR_REVEAL: :frag (appear)
+[[../imgs/50-usd-note.jpg]]\\
+#+ATTR_REVEAL: :frag (appear)
+"This note is legal tender for all debts, public and private"
+* Intrinsic Value
+Nothing has /intrinsic value/.
+Everything is a product of human labor (time and effort). 
+
+* Bitcoin
+
+* Properties of Money
+
+* Comparison
+
+* Money Low
+Natural selection.
+Tend to converge to a single language, *universal* language.
+
+* Questions?
+
+
+* TODO
+  - Nick Szabo quote
+  - mention stone money
