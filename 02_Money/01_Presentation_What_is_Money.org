@@ -1,0 +1,151 @@
+#+STARTUP: hidestars
+
+#+TITLE: What is Money?
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: May 22, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ../imgs/stone-money.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* History of Money
+
+* Prehistory — Barter
+*Direct exchange* of good or services without using a /medium of exchange/ (such as money)
+** Limitations
+   - Difficult to find a match (does not scale)
+   - Not always feasible (how many apples for a horse?)
+   - No common measure of value
+#+BEGIN_NOTES
+Barter uses to work in ancient societies when the number of different goods or services were low.
+Lack of common measure of value makes difficult to make economic calculations.
+#+END_NOTES
+
+* Primitive Money
+** Cowrie Shells
+[[../ext/wikimedia/cowrie-shells.jpg]]
+#+BEGIN_NOTES
+The most scarcest and hardest to find.
+#+END_NOTES
+
+** Problems With Primitive Money
+They are not *universal*, nor *scarce*
+#+BEGIN_NOTES
+ - shells were used in Pacific Islands, but Aggry beads were used in Africa
+ - when colonists came with advanced technologies, such money felt hard
+#+END_NOTES
+
+* Commodity Money
+** Grains
+[[../imgs/grains.jpg]]
+*** Pros
+    - Scarce
+    - Fairly easy to transport
+    - Divisible
+    - *More universal* (than seashells)
+*** Cons
+    - Not really universal (differ in quality, size, type)
+    - Not easy to store
+** Gold
+[[../imgs/gold.jpg]]
+*** Pros
+    - Really scarce
+    - Universal
+    - Divisible
+    - Easy to transport
+    - *Easy to store*
+*** Cons
+    - Not easy to verify
+    - Not divisible enough
+*** Silver, Copper as Commodity Money?
+Note: *Silver* and *Copper* arose not because they were good money, but because *gold* was not good enough
+
+* Representative Money
+#+ATTR_REVEAL: :frag (appear)
+A medium of exchange that represents something of value, but has little or no value of its own
+** Pros
+   - Scarce (as value they represent)
+   - Universal (as value they represent)
+   - Divisible
+   - Easy to transport
+   - Easy to store
+   - *Easy to verify*
+#+BEGIN_NOTES
+ - easy to verify since they are designed to be difficult to counterfeit, bit easy to verify
+#+END_NOTES
+
+** What is Wrong with Representative Money?
+#+ATTR_REVEAL: :frag (appear)
+*Trust*
+#+ATTR_REVEAL: :frag (appear)
+As any promise it will be broken...
+#+BEGIN_NOTES
+ - We have to trust (a bank, a government) to keep the promise to exchange the money for the value they represent.
+ - It happened many times in the human history.
+ - The most recent and the most notable is ending of the Gold standard in the US.
+#+END_NOTES
+
+** Example: Gold Standard in the US
+*** Gold Standard
+[[../imgs/gold-certificate.jpg]]\\
+#+ATTR_REVEAL: :frag (appear)
+"Fifty dollars in gold coin payable to the bearer on demand"
+*** Executive Order 6102
+On April 5, *1933* by President Franklin D. Roosevelt\\
+/"forbidding the hoarding of gold coin, gold bullion, and gold certificates within the continental United States"/
+*** "Nixon Shock"
+On August 15, *1971* by president Richard Nixon ended international convertibility of the U.S. dollar to gold
+*** Federal Reserve Note
+[[../imgs/50-usd-note.jpg]]\\
+#+ATTR_REVEAL: :frag (appear)
+"This note is legal tender for all debts, public and private"
+*** What Happened Next?
+[[../imgs/mc-donalds-menu-1971.jpg]]\\
+McDonald's menu from 1971
+#+ATTR_REVEAL: :frag (appear)
+See more examples and analysis at [[https://wtfhappenedin1971.com][WtfHappenedIn1971.com]]
+
+* Fiat Money
+A currency established as money, often by government regulation, but that has no intrinsic value
+[[../imgs/50-usd-note.jpg]]
+
+** Problems With Fiat Money
+Government has *power* to debase it. Unpredictably.\\
+#+ATTR_REVEAL: :frag (appear)
+As any power it will be abused...
+
+** History of Reserve Currencies
+[[../ext/other/reserve-currencies.png]]
+
+* Bitcoin
+  - Pure digital currency
+  - Limited predictable supply (21 million)
+  - No single entity in charge
+#+BEGIN_NOTES
+ - divisible, easy to transport, easy to store
+#+END_NOTES
+
+* Observations About Money
+#+ATTR_REVEAL: :frag (appear)
+  - *Natural selection* — the best money will win worse ones
+#+ATTR_REVEAL: :frag (appear)
+  - *Convergence* — money tend to converge to a single (universal) unit
+
+* Comparison
+#+ATTR_REVEAL: :frag (appear)
+|---------+-------------+--------------------------------------------------|
+| Asset   | convenience | backed by                                        |
+|---------+-------------+--------------------------------------------------|
+| Gold    | low         | /belief/ that supply will not change drastically |
+| Fiat    | high        | /belief/ that government will not abuse it       |
+| Bitcoin | high        | */math/*                                         |
+|---------+-------------+--------------------------------------------------|
+#+ATTR_REVEAL: :frag (appear)
+/What would you choose?/
+
+* Questions?

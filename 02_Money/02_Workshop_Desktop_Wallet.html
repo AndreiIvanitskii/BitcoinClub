@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Desktop Wallet</title>
+<meta name="author" content="Andrei Ivanitskii"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="../imgs/desktop.jpg">
+<h1>Desktop Wallet</h1>
+<h3>Andrei Ivanitskii</h3>
+<h4>May 22, 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+<div class="keyboard-usage">
+    <p>(Press <b>?</b> for help, <b>n</b> and <b>p</b> for next and previous slide)</p>
+</div>
+
+</section>
+
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Preparation</h2>
+<ul>
+<li>Get a desktop or a laptop</li>
+<li>Get the smartphone with Green wallet from the previous workshop</li>
+<li>Get a piece of paper and a pen or a pencil</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Installation</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1</span> Download Electrum</h3>
+<p>
+<b>Warning:</b> Here you trust that I verified the signature.
+For secure setup you must verify the signature yourself.
+</p>
+<ul>
+<li>Windows <a href="../ext/electrum/electrum-3.3.8.exe">electrum-3.3.8.exe</a></li>
+<li>MacOS <a href="../ext/electrum/electrum-3.3.8.dmg">electrum-3.3.8.dmg</a></li>
+<li>Linux <a href="../ext/electrum/electrum-3.3.8-x86_64.AppImage">electrum-3.3.8-x86<sub>64.AppImage</sub></a></li>
+
+</ul>
+
+</section>
+<section id="slide-2-2">
+<h3 id="2-2"><span class="section-number-3">2.2</span> Install Binary</h3>
+<p>
+Double click, follow instructions
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Testnet Setup</h2>
+<ul>
+<li><a href="#/slide-windows" class="forwardlink">On Windows</a></li>
+<li><a href="#/slide-macos" class="forwardlink">On MacOs</a></li>
+<li><a href="#/slide-linux" class="forwardlink">On Linux</a></li>
+
+</ul>
+</section>
+<section id="slide-windows">
+<h3 id="windows"><span class="section-number-3">3.1</span> On Windows</h3>
+<ul>
+<li>Make a copy of the Electrum shortcut from the desktop</li>
+<li>Right click → "Properties"</li>
+<li>On "Shortcut" tab in "Target" field append <code>--testnet</code> (mind leading space)</li>
+<li>On "General" tab set the first field to <code>Electrum Testnet</code></li>
+<li>Press "OK"</li>
+
+</ul>
+</section>
+<section id="slide-macos">
+<h3 id="macos"><span class="section-number-3">3.2</span> On MacOS</h3>
+<ul>
+<li>Open terminal</li>
+<li>Run <code>open -n /Applications/Electrum.app --args --testnet</code></li>
+
+</ul>
+</section>
+<section id="slide-linux">
+<h3 id="linux"><span class="section-number-3">3.3</span> On Linux</h3>
+<ul>
+<li>Open terminal</li>
+<li>Go to the directory with the downloaded file<br />
+usually <code>cd ~/Downloads</code></li>
+<li>Make executable, run <code>chmod a+x ./electrum-3.3.8-x86_64.AppImage</code></li>
+<li>Run <code>./electrum-3.3.8-x86_64.AppImage --testnet</code></li>
+
+</ul>
+</section>
+<section id="slide-3-4">
+<h3 id="3-4"><span class="section-number-3">3.4</span> Check Connection</h3>
+<ul>
+<li>Check that the circle in the right bottom corner turns green</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Create New Wallet</h2>
+<ul>
+<li>Leave "Auto connect" option enabled → Next</li>
+<li>Leave default wallet name → Next</li>
+<li>Leave "Standard wallet" → Next</li>
+<li>Leave "Create a new seed"</li>
+<li>Leave "Segwit"</li>
+<li>Write down the seed</li>
+<li>Enter the seed</li>
+<li>Leave password field empty → Next</li>
+<li>Enable update check → Yes</li>
+<li>You are in testnet mode → OK</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Receive Coins</h2>
+<ul>
+<li>Open "Receive" tab</li>
+<li>Scan QR code using your Green mobile wallet, send some coins</li>
+<li>Note "Receiving address" turns red</li>
+
+</ul>
+
+</section>
+<section id="slide-5-1">
+<h3 id="5-1"><span class="section-number-3">5.1</span> Share New Receive Address</h3>
+<ul>
+<li>Open "Receive" tab</li>
+<li>Press "New"</li>
+<li>Share "Receiving address" with your peers</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Send to Many</h2>
+<ul>
+<li>In menu press "Tools" → "Pay to many" → OK</li>
+<li>Enter addresses and amounts into "Pay to" field<br />
+(e.g. <code>tb1qagzed9487qujmca6f8u2ghjqhgepsfym9pa2sk, 0.01</code>)</li>
+<li>Press "Send" → Yes</li>
+
+</ul>
+
+</section>
+<section id="slide-6-1">
+<h3 id="6-1"><span class="section-number-3">6.1</span> Review Transaction</h3>
+<ul>
+<li>Open "History" tab</li>
+<li>Right click on the latest transaction → "Details"</li>
+<li>Review "Outputs"</li>
+
+</ul>
+
+</section>
+<section id="slide-6-2">
+<h3 id="6-2"><span class="section-number-3">6.2</span> Inspect Addresses</h3>
+<ul>
+<li>In menu press "View" → "Show Addresses"</li>
+<li>Open "Addresses" tab</li>
+<li>Inspect addresses (mind "change" addresses)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-7">
+<h2 id="7"><span class="section-number-2">7</span> Workshop Review</h2>
+<ul>
+<li>Installed the desktop wallet</li>
+<li>Reviewed a complex transactions</li>
+<li>Inspected addresses</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-8">
+<h2 id="8"><span class="section-number-2">8</span> Questions?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>

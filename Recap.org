@@ -1,0 +1,21 @@
+#+STARTUP: hidestars
+
+#+TITLE: Bitcoin Club
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: May 22, 2020
+
+#+REVEAL_ROOT: ./ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ./ext/custom.css
+#+REVEAL_TITLE_SLIDE: ./ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./ext/pixabay/club.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* Welcome New Joiners
+  - What do you know about bitcoin?
+  - What do you like to learn?
+
+* Recap?
+

@@ -1,0 +1,106 @@
+#+STARTUP: hidestars
+
+#+TITLE: Desktop Wallet
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: May 22, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ../imgs/desktop.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* Preparation
+  - Get a desktop or a laptop
+  - Get the smartphone with Green wallet from the previous workshop
+  - Get a piece of paper and a pen or a pencil
+
+* Installation
+** Download Electrum
+*Warning:* Here you trust that I verified the signature.
+For secure setup you must verify the signature yourself.
+ - Windows [[../ext/electrum/electrum-3.3.8.exe][electrum-3.3.8.exe]]
+ - MacOS [[../ext/electrum/electrum-3.3.8.dmg][electrum-3.3.8.dmg]]
+ - Linux [[../ext/electrum/electrum-3.3.8-x86_64.AppImage][electrum-3.3.8-x86_64.AppImage]]
+
+** Install Binary
+Double click, follow instructions
+
+* Testnet Setup
+ - [[#windows][On Windows]]
+ - [[#macos][On MacOs]]
+ - [[#linux][On Linux]]
+** On Windows
+   :PROPERTIES:
+   :CUSTOM_ID: windows
+   :END:
+   - Make a copy of the Electrum shortcut from the desktop
+   - Right click → "Properties"
+   - On "Shortcut" tab in "Target" field append ~--testnet~ (mind leading space)
+   - On "General" tab set the first field to ~Electrum Testnet~
+   - Press "OK"
+** On MacOS
+   :PROPERTIES:
+   :CUSTOM_ID: macos
+   :END:
+   - Open terminal
+   - Run ~open -n /Applications/Electrum.app --args --testnet~
+** On Linux
+   :PROPERTIES:
+   :CUSTOM_ID: linux
+   :END:
+   - Open terminal
+   - Go to the directory with the downloaded file\\
+     usually ~cd ~/Downloads~
+   - Make executable, run ~chmod a+x ./electrum-3.3.8-x86_64.AppImage~
+   - Run ~./electrum-3.3.8-x86_64.AppImage --testnet~
+** Check Connection
+   - Check that the circle in the right bottom corner turns green
+
+* Create New Wallet
+  - Leave "Auto connect" option enabled → Next
+  - Leave default wallet name → Next
+  - Leave "Standard wallet" → Next
+  - Leave "Create a new seed"
+  - Leave "Segwit"
+  - Write down the seed
+  - Enter the seed
+  - Leave password field empty → Next
+  - Enable update check → Yes
+  - You are in testnet mode → OK
+
+* Receive Coins
+  - Open "Receive" tab
+  - Scan QR code using your Green mobile wallet, send some coins
+  - Note "Receiving address" turns red
+
+** Share New Receive Address
+   - Open "Receive" tab
+   - Press "New"
+   - Share "Receiving address" with your peers
+
+* Send to Many
+  - In menu press "Tools" → "Pay to many" → OK
+  - Enter addresses and amounts into "Pay to" field\\
+    (e.g. ~tb1qagzed9487qujmca6f8u2ghjqhgepsfym9pa2sk, 0.01~)
+  - Press "Send" → Yes
+
+** Review Transaction
+   - Open "History" tab
+   - Right click on the latest transaction → "Details"
+   - Review "Outputs"
+
+** Inspect Addresses
+   - In menu press "View" → "Show Addresses"
+   - Open "Addresses" tab
+   - Inspect addresses (mind "change" addresses)
+
+* Workshop Review
+  - Installed the desktop wallet
+  - Reviewed a complex transactions
+  - Inspected addresses
+
+* Questions?
