@@ -22,7 +22,7 @@
 ** Download Electrum
 *Warning:* Here you trust that I verified the signature.
 For secure setup you must verify the signature yourself.
- - Windows [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-setup-3.3.8.exe][electrum-3.3.8-setup.exe]]
+ - Windows [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8-setup.exe][electrum-3.3.8-setup.exe]]
  - MacOS [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8.dmg][electrum-3.3.8.dmg]]
  - Linux [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8-x86_64.AppImage][electrum-3.3.8-x86_64.AppImage]]
 
