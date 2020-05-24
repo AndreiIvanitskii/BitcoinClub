@@ -1,0 +1,108 @@
+#+STARTUP: hidestars
+
+#+TITLE: Кошелёк для ПК
+#+AUTHOR: Андрей Иваницкий
+#+DATE: 28 мая 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ../imgs/desktop.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* Подготовка
+  - ПК или ноутбук
+  - Смартфон с мобильным кошельком с прошлого занятия
+  - Лист бумаги
+  - Ручка или карандаш
+
+* Установка
+** Закгрузка приложения Electrum
+*Внимание:* Вы доверяете мне, что я проверил цифровую подпись.
+Для надёжной установки вы должны проверить подпись самостоятельно.
+ - Windows [[../ext/electrum/electrum-3.3.8.exe][electrum-3.3.8.exe]]
+ - MacOS [[../ext/electrum/electrum-3.3.8.dmg][electrum-3.3.8.dmg]]
+ - Linux [[../ext/electrum/electrum-3.3.8-x86_64.AppImage][electrum-3.3.8-x86_64.AppImage]]
+
+** Установка приложения
+Кликните на файл два раза, следуйтё инструкциям
+
+* Testnet конфигурация
+ - [[#windows][На Windows]]
+ - [[#macos][На MacOs]]
+ - [[#linux][На Linux]]
+** На Windows
+   :PROPERTIES:
+   :CUSTOM_ID: windows
+   :END:
+   - Сделайте копию ярлыка Electrum на рабочем столе
+   - Кликните правой кнопкой → "Свойства" / "Properties"
+   - На закладке "Ярлык" / "Shortcut" в поле "Цель" / "Target" добавьте ~--testnet~ (обратите внимание на пробел вначале)
+   - На закладке "Общее" / "General" введите в поле ~Electrum Testnet~
+   - Нажмите "OK"
+** На MacOS
+   :PROPERTIES:
+   :CUSTOM_ID: macos
+   :END:
+   - Open terminal
+   - Run ~open -n /Applications/Electrum.app --args --testnet~
+** На Linux
+   :PROPERTIES:
+   :CUSTOM_ID: linux
+   :END:
+   - Open terminal
+   - Go to the directory with the downloaded file\\
+     usually ~cd ~/Downloads~
+   - Make executable, run ~chmod a+x ./electrum-3.3.8-x86_64.AppImage~
+   - Run ~./electrum-3.3.8-x86_64.AppImage --testnet~
+
+* Создайте новый кошелёк
+  - Оставьте выделенным опцию "Auto connect" option enabled → Дальше
+  - Leave default wallet name → Next
+  - Leave "Standard wallet" → Next
+  - Leave "Create a new seed"
+  - Leave "Segwit"
+  - Write down the seed
+  - Enter the seed
+  - Leave password field empty → Next
+  - Enable update check → Yes
+  - You are in testnet mode → OK
+
+** Проверьте соединение
+   - Убедитесь, что кружок в правом нижнем углу стал зелёным
+
+* Получение монет
+  - Open "Receive" tab
+  - Scan QR code using your Green mobile wallet, send some coins
+  - Note "Receiving address" turns red
+
+** Поделитесь новым адресом
+   - Open "Receive" tab
+   - Press "New"
+   - Share "Receiving address" with your peers
+
+* Send to Many
+  - In menu press "Tools" → "Pay to many" → OK
+  - Enter addresses and amounts into "Pay to" field\\
+    (e.g. ~tb1qagzed9487qujmca6f8u2ghjqhgepsfym9pa2sk, 0.01~)
+  - Press "Send" → Yes
+
+** Просмотр тразакции
+   - Open "History" tab
+   - Right click on the latest transaction → "Details"
+   - Review "Outputs"
+
+** Изучение адресов
+   - In menu press "View" → "Show Addresses"
+   - Open "Addresses" tab
+   - Inspect addresses (mind "change" addresses)
+
+* Обзор практической части
+  - Установили кошелёк на ПК
+  - Просмотрели сложную транзакцию
+  - Изучили адреса
+
+* Вопросы?
