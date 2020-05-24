@@ -17,5 +17,11 @@
   - What do you know about bitcoin?
   - What do you like to learn?
 
-* Recap?
+* Warm up
+Do you want me to ask you?\\
+Type *yes*.
 
+* Agenda
+  - Presentation
+  - Q&A Session
+  - Workshop

@@ -57,8 +57,6 @@ Double click, follow instructions
      usually ~cd ~/Downloads~
    - Make executable, run ~chmod a+x ./electrum-3.3.8-x86_64.AppImage~
    - Run ~./electrum-3.3.8-x86_64.AppImage --testnet~
-** Check Connection
-   - Check that the circle in the right bottom corner turns green
 
 * Create New Wallet
   - Leave "Auto connect" option enabled → Next
@@ -71,6 +69,9 @@ Double click, follow instructions
   - Leave password field empty → Next
   - Enable update check → Yes
   - You are in testnet mode → OK
+
+** Check Connection
+   - Check that the circle in the right bottom corner turns green
 
 * Receive Coins
   - Open "Receive" tab
