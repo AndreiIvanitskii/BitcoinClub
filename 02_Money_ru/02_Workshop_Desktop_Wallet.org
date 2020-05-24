@@ -23,9 +23,9 @@
 ** Закгрузка приложения Electrum
 *Внимание:* Вы доверяете мне, что я проверил цифровую подпись.
 Для надёжной установки вы должны проверить подпись самостоятельно.
- - Windows [[../ext/electrum/electrum-3.3.8.exe][electrum-3.3.8.exe]]
- - MacOS [[../ext/electrum/electrum-3.3.8.dmg][electrum-3.3.8.dmg]]
- - Linux [[../ext/electrum/electrum-3.3.8-x86_64.AppImage][electrum-3.3.8-x86_64.AppImage]]
+ - Windows [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-setup-3.3.8.exe][electrum-3.3.8-setup.exe]]
+ - MacOS [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8.dmg][electrum-3.3.8.dmg]]
+ - Linux [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8-x86_64.AppImage][electrum-3.3.8-x86_64.AppImage]]
 
 ** Установка приложения
 Кликните на файл два раза, следуйтё инструкциям
