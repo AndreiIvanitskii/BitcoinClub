@@ -134,10 +134,19 @@ As any power it will be abused...
  - divisible, easy to transport, easy to store
 #+END_NOTES
 
+* Good Money Properties
+  - Scarce
+  - Divisible
+  - Easy to transport
+  - Easy to store
+  - Easy to verify
+  - Trustless
+  - No single entity in charge
+
 * Is Bitcoin Money?
-If Cowrie shells, gold, gold certificates, fiat notes are money.\\
+If Cowrie shells, gold, gold certificates, fiat notes are money...\\
 #+ATTR_REVEAL: :frag (appear)
-*Why is bitcoin not money?*
+why is *bitcoin* not money?
 
 * Observations About Money
 #+ATTR_REVEAL: :frag (appear)

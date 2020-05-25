@@ -60,45 +60,45 @@
    - Run ~./electrum-3.3.8-x86_64.AppImage --testnet~
 
 * Создайте новый кошелёк
-  - Оставьте выделенным опцию "Auto connect" option enabled → Дальше
-  - Leave default wallet name → Next
-  - Leave "Standard wallet" → Next
-  - Leave "Create a new seed"
+  - Оставьте выделенным опцию "Auto connect" → Next
+  - Оставьте название кошелька по умолчанию → Next
+  - Оставьте опцию "Standard wallet" → Next
+  - Оставьте опцию "Create a new seed" → Next
   - Leave "Segwit"
-  - Write down the seed
-  - Enter the seed
-  - Leave password field empty → Next
-  - Enable update check → Yes
-  - You are in testnet mode → OK
+  - Запишите мнемоническую фразу
+  - Введите мнемоническую фразу
+  - Оставьте поле пароля пустым → Next
+  - Включить проверку обновлений? / Enable update check? → Yes
+  - Вы в режиме testnet / You are in testnet mode → OK
 
 ** Проверьте соединение
    - Убедитесь, что кружок в правом нижнем углу стал зелёным
 
 * Получение монет
-  - Open "Receive" tab
-  - Scan QR code using your Green mobile wallet, send some coins
-  - Note "Receiving address" turns red
+  - Откройте вкладку "Receive"
+  - Отсканируёте QR код, используя ваш мобильный кошелёк, пошлите немного монет
+  - Обратите внимание, поле "Receiving address" станет красным
 
 ** Поделитесь новым адресом
-   - Open "Receive" tab
-   - Press "New"
-   - Share "Receiving address" with your peers
+   - Откройте вкладку "Receive"
+   - Нажмите "New"
+   - Поделитесь адресом из поля "Receiving address" другими участниками
 
-* Send to Many
-  - In menu press "Tools" → "Pay to many" → OK
-  - Enter addresses and amounts into "Pay to" field\\
-    (e.g. ~tb1qagzed9487qujmca6f8u2ghjqhgepsfym9pa2sk, 0.01~)
-  - Press "Send" → Yes
+* Посылка многим
+  - В меню выберите "Tools" → "Pay to many" → OK
+  - В поле "Pay to" введите адреса других участников и сумму\\
+    (например, ~tb1qagzed9487qujmca6f8u2ghjqhgepsfym9pa2sk, 0.01~)
+  - Нажмите "Send" → Yes
 
 ** Просмотр тразакции
-   - Open "History" tab
-   - Right click on the latest transaction → "Details"
-   - Review "Outputs"
+   - Откройте вкладку "History"
+   - Кликните правой кнопокой мыши по последней транзакции → "Details"
+   - Просмотрите поле "Outputs"
 
 ** Изучение адресов
-   - In menu press "View" → "Show Addresses"
-   - Open "Addresses" tab
-   - Inspect addresses (mind "change" addresses)
+   - В меню выберите "View" → "Show Addresses"
+   - Откройте вкладку "Addresses"
+   - Изучите адркса (обратите внимание на "change" адреса)
 
 * Обзор практической части
   - Установили кошелёк на ПК

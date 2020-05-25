@@ -101,7 +101,7 @@ Double click, follow instructions
 
 * Workshop Review
   - Installed the desktop wallet
-  - Reviewed a complex transactions
+  - Reviewed a complex transaction
   - Inspected addresses
 
 * Questions?
