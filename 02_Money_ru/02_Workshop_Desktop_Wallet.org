@@ -6,8 +6,8 @@
 
 #+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
 #+REVEAL_THEME: moon
-#+REVEAL_EXTRA_CSS: ../ext/custom.css
-#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_EXTRA_CSS: ../ext/custom-ru.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide-ru.html
 #+REVEAL_TITLE_SLIDE_BACKGROUND: ../imgs/desktop.jpg
 
 #+OPTIONS: num:t toc:nil reveal_history:t
@@ -20,7 +20,7 @@
   - Ручка или карандаш
 
 * Установка
-** Закгрузка приложения Electrum
+** Загрузка приложение Electrum
 *Внимание:* Вы доверяете мне, что я проверил цифровую подпись.
 Для надёжной установки вы должны проверить подпись самостоятельно.
  - Windows [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8-setup.exe][electrum-3.3.8-setup.exe]]
@@ -28,7 +28,7 @@
  - Linux [[https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8-x86_64.AppImage][electrum-3.3.8-x86_64.AppImage]]
 
 ** Установка приложения
-Кликните на файл два раза, следуйтё инструкциям
+Кликните на файл два раза, следуйте инструкциям
 
 * Testnet конфигурация
  - [[#windows][На Windows]]
@@ -40,7 +40,7 @@
    :END:
    - Сделайте копию ярлыка Electrum на рабочем столе
    - Кликните правой кнопкой → "Свойства" / "Properties"
-   - На закладке "Ярлык" / "Shortcut" в поле "Цель" / "Target" добавьте ~--testnet~ (обратите внимание на пробел вначале)
+   - На закладке "Ярлык" / "Shortcut" в поле "Цель" / "Target" *добавьте* в конец ~--testnet~ (обратите внимание на пробел вначале)
    - На закладке "Общее" / "General" введите в поле ~Electrum Testnet~
    - Нажмите "OK"
 ** На MacOS
@@ -60,45 +60,49 @@
    - Run ~./electrum-3.3.8-x86_64.AppImage --testnet~
 
 * Создайте новый кошелёк
-  - Оставьте выделенным опцию "Auto connect" → Next
-  - Оставьте название кошелька по умолчанию → Next
-  - Оставьте опцию "Standard wallet" → Next
-  - Оставьте опцию "Create a new seed" → Next
-  - Leave "Segwit"
-  - Запишите мнемоническую фразу
-  - Введите мнемоническую фразу
-  - Оставьте поле пароля пустым → Next
-  - Включить проверку обновлений? / Enable update check? → Yes
-  - Вы в режиме testnet / You are in testnet mode → OK
+  1. Откройте приложение "Electrum Testnet"
+  3. Оставьте опцию "Auto connect" → Next
+  4. Оставьте название кошелька → Next
+  5. Оставьте опцию "Standard wallet" → Next
+  6. Оставьте опцию "Create a new seed" → Next
+  7. Оставьте опцию "Segwit" → Next
+  8. Запишите мнемоническую фразу на лист бумаги → Next
+  9. Введите мнемоническую фразу → Next
+  10. Оставьте поле пароля пустым → Next
+  11. Включить проверку обновлений? / Enable update check? → Yes
+  12. Вы в режиме testnet / You are in testnet mode → OK
 
 ** Проверьте соединение
    - Убедитесь, что кружок в правом нижнем углу стал зелёным
 
 * Получение монет
   - Откройте вкладку "Receive"
-  - Отсканируёте QR код, используя ваш мобильный кошелёк, пошлите немного монет
+  - Отсканируйте QR код, используя ваш мобильный кошелёк, пошлите немного монет
   - Обратите внимание, поле "Receiving address" станет красным
 
 ** Поделитесь новым адресом
    - Откройте вкладку "Receive"
    - Нажмите "New"
-   - Поделитесь адресом из поля "Receiving address" другими участниками
+   - Поделитесь адресом из поля "Receiving address" с другими участниками (в чате)
 
 * Посылка многим
   - В меню выберите "Tools" → "Pay to many" → OK
-  - В поле "Pay to" введите адреса других участников и сумму\\
-    (например, ~tb1qagzed9487qujmca6f8u2ghjqhgepsfym9pa2sk, 0.01~)
+  - В поле "Pay to" введите адреса других участников и сумму, например:
+    #+BEGIN_SRC
+tb1qagzed9487qujmca6f8u2ghjqhgepsfym9pa2sk, 0.01
+tb1q9j228mxq6ady4c90sjuxnd5xkg23vawstw2xgn, 0.02
+#+END_SRC
   - Нажмите "Send" → Yes
 
-** Просмотр тразакции
+** Просмотр транзакции
    - Откройте вкладку "History"
-   - Кликните правой кнопокой мыши по последней транзакции → "Details"
-   - Просмотрите поле "Outputs"
+   - Кликните правой кнопкой мыши по первой в списке транзакции → "Details"
+   - Просмотрите поле "Outputs" → Close
 
 ** Изучение адресов
    - В меню выберите "View" → "Show Addresses"
    - Откройте вкладку "Addresses"
-   - Изучите адркса (обратите внимание на "change" адреса)
+   - Изучите адреса (обратите внимание на "change" адреса)
 
 * Обзор практической части
   - Установили кошелёк на ПК

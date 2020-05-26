@@ -26,6 +26,13 @@ code {
     padding: 4px 10px;
 }
 
+.reveal pre {
+    font-size: 70%;
+    background-color: #001b26;
+    padding: 4px 10px;
+    margin: 10px;
+}
+
 .section-number-2,
 .section-number-3,
 .section-number-4,

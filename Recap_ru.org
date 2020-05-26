@@ -1,0 +1,25 @@
+#+STARTUP: hidestars
+
+#+TITLE: Биткоин Клуб
+#+AUTHOR: Андрей Иваницкий
+#+DATE: 28 мая 2020
+
+#+REVEAL_ROOT: ./ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ./ext/custom-ru.css
+#+REVEAL_TITLE_SLIDE: ./ext/title-slide-ru.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./ext/pixabay/club.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* Добро пожаловать, присоединившиеся
+
+* Разогрев
+Вы хотите, чтоб я вас спросил?\\
+Напечатайте в чате *да*.
+
+* План
+  - Презентация
+  - Сессия вопросов и ответов
+  - Практическая часть

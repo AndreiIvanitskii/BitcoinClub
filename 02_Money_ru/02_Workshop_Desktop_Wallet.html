@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Кошелёк для ПК</title>
+<meta name="author" content="Андрей Иваницкий"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom-ru.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="../imgs/desktop.jpg">
+<h1>Кошелёк для ПК</h1>
+<h3>Андрей Иваницкий</h3>
+<h4>28 мая 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+<div class="keyboard-usage">
+    <p>(Нажмите <b>?</b> для получения помощи, <b>n</b> и <b>p</b> для следующего и предыдущего слайда соответственно)</p>
+</div>
+
+</section>
+
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Подготовка</h2>
+<ul>
+<li>ПК или ноутбук</li>
+<li>Смартфон с мобильным кошельком с прошлого занятия</li>
+<li>Лист бумаги</li>
+<li>Ручка или карандаш</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Установка</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1</span> Загрузка приложение Electrum</h3>
+<p>
+<b>Внимание:</b> Вы доверяете мне, что я проверил цифровую подпись.
+Для надёжной установки вы должны проверить подпись самостоятельно.
+</p>
+<ul>
+<li>Windows <a href="https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8-setup.exe">electrum-3.3.8-setup.exe</a></li>
+<li>MacOS <a href="https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8.dmg">electrum-3.3.8.dmg</a></li>
+<li>Linux <a href="https://github.com/AndreiIvanitskii/BitcoinClub/raw/master/ext/electrum/electrum-3.3.8-x86_64.AppImage">electrum-3.3.8-x86<sub>64.AppImage</sub></a></li>
+
+</ul>
+
+</section>
+<section id="slide-2-2">
+<h3 id="2-2"><span class="section-number-3">2.2</span> Установка приложения</h3>
+<p>
+Кликните на файл два раза, следуйте инструкциям
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Testnet конфигурация</h2>
+<ul>
+<li><a href="#/slide-windows" class="forwardlink">На Windows</a></li>
+<li><a href="#/slide-macos" class="forwardlink">На MacOs</a></li>
+<li><a href="#/slide-linux" class="forwardlink">На Linux</a></li>
+
+</ul>
+</section>
+<section id="slide-windows">
+<h3 id="windows"><span class="section-number-3">3.1</span> На Windows</h3>
+<ul>
+<li>Сделайте копию ярлыка Electrum на рабочем столе</li>
+<li>Кликните правой кнопкой → "Свойства" / "Properties"</li>
+<li>На закладке "Ярлык" / "Shortcut" в поле "Цель" / "Target" <b>добавьте</b> в конец <code>--testnet</code> (обратите внимание на пробел вначале)</li>
+<li>На закладке "Общее" / "General" введите в поле <code>Electrum Testnet</code></li>
+<li>Нажмите "OK"</li>
+
+</ul>
+</section>
+<section id="slide-macos">
+<h3 id="macos"><span class="section-number-3">3.2</span> На MacOS</h3>
+<ul>
+<li>Open terminal</li>
+<li>Run <code>open -n /Applications/Electrum.app --args --testnet</code></li>
+
+</ul>
+</section>
+<section id="slide-linux">
+<h3 id="linux"><span class="section-number-3">3.3</span> На Linux</h3>
+<ul>
+<li>Open terminal</li>
+<li>Go to the directory with the downloaded file<br />
+usually <code>cd ~/Downloads</code></li>
+<li>Make executable, run <code>chmod a+x ./electrum-3.3.8-x86_64.AppImage</code></li>
+<li>Run <code>./electrum-3.3.8-x86_64.AppImage --testnet</code></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Создайте новый кошелёк</h2>
+<ol>
+<li>Откройте приложение "Electrum Testnet"</li>
+<li>Оставьте опцию "Auto connect" → Next</li>
+<li>Оставьте название кошелька → Next</li>
+<li>Оставьте опцию "Standard wallet" → Next</li>
+<li>Оставьте опцию "Create a new seed" → Next</li>
+<li>Оставьте опцию "Segwit" → Next</li>
+<li>Запишите мнемоническую фразу на лист бумаги → Next</li>
+<li>Введите мнемоническую фразу → Next</li>
+<li>Оставьте поле пароля пустым → Next</li>
+<li>Включить проверку обновлений? / Enable update check? → Yes</li>
+<li>Вы в режиме testnet / You are in testnet mode → OK</li>
+
+</ol>
+
+</section>
+<section id="slide-4-1">
+<h3 id="4-1"><span class="section-number-3">4.1</span> Проверьте соединение</h3>
+<ul>
+<li>Убедитесь, что кружок в правом нижнем углу стал зелёным</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Получение монет</h2>
+<ul>
+<li>Откройте вкладку "Receive"</li>
+<li>Отсканируйте QR код, используя ваш мобильный кошелёк, пошлите немного монет</li>
+<li>Обратите внимание, поле "Receiving address" станет красным</li>
+
+</ul>
+
+</section>
+<section id="slide-5-1">
+<h3 id="5-1"><span class="section-number-3">5.1</span> Поделитесь новым адресом</h3>
+<ul>
+<li>Откройте вкладку "Receive"</li>
+<li>Нажмите "New"</li>
+<li>Поделитесь адресом из поля "Receiving address" с другими участниками (в чате)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Посылка многим</h2>
+<ul>
+<li>В меню выберите "Tools" → "Pay to many" → OK</li>
+<li><p>
+В поле "Pay to" введите адреса других участников и сумму, например:
+</p>
+<pre  class="example">
+tb1qagzed9487qujmca6f8u2ghjqhgepsfym9pa2sk, 0.01
+tb1q9j228mxq6ady4c90sjuxnd5xkg23vawstw2xgn, 0.02
+</pre></li>
+<li>Нажмите "Send" → Yes</li>
+
+</ul>
+
+</section>
+<section id="slide-6-1">
+<h3 id="6-1"><span class="section-number-3">6.1</span> Просмотр транзакции</h3>
+<ul>
+<li>Откройте вкладку "History"</li>
+<li>Кликните правой кнопкой мыши по первой в списке транзакции → "Details"</li>
+<li>Просмотрите поле "Outputs" → Close</li>
+
+</ul>
+
+</section>
+<section id="slide-6-2">
+<h3 id="6-2"><span class="section-number-3">6.2</span> Изучение адресов</h3>
+<ul>
+<li>В меню выберите "View" → "Show Addresses"</li>
+<li>Откройте вкладку "Addresses"</li>
+<li>Изучите адреса (обратите внимание на "change" адреса)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-7">
+<h2 id="7"><span class="section-number-2">7</span> Обзор практической части</h2>
+<ul>
+<li>Установили кошелёк на ПК</li>
+<li>Просмотрели сложную транзакцию</li>
+<li>Изучили адреса</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-8">
+<h2 id="8"><span class="section-number-2">8</span> Вопросы?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
