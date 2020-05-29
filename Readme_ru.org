@@ -5,3 +5,6 @@
    - Презентация: Биткоин Клуб ([[./01_Club_ru/01_Presentation_Club.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club_ru/01_Presentation_Club.html][вид слайдов]])
    - Презентация: Что токое биткоин? ([[./01_Club_ru/02_Presentation_What_is_Bitcoin.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club_ru/02_Presentation_What_is_Bitcoin.html][вид слайдов]])
    - Практика: Мобильный кошелёк ([[./01_Club_ru/03_Workshop_Mobile_Wallet.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/01_Club_ru/03_Workshop_Mobile_Wallet.html][вид слайдов]])
+** Деньги
+   - Презентация: Что такое деньги? ([[./02_Money_ru/01_Presentation_What_is_Money.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/02_Money_ru/01_Presentation_What_is_Money.html][вид слайдов]])
+   - Практика: Кошелёк для ПК ([[./02_Money_ru/02_Workshop_Desktop_Wallet.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/02_Money_ru/02_Workshop_Desktop_Wallet.html][вид слайдов]])
