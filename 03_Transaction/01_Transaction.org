@@ -1,0 +1,129 @@
+#+STARTUP: hidestars
+
+#+TITLE: Bitcoin Transactions
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: June 4, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../imgs/transactions-screenshot.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+* Cryptography
+A science about various aspects in information security such as data confidentiality, data integrity, authentication, and non-repudiation
+#+ATTR_REVEAL: :frag (appear)
+Traditionally participants in cryptographic schemes and protocols are named: Alice, Bob, Carol, ...
+
+** Digital Signature
+A mathematical scheme for verifying the /authenticity/ of a digital message or a digital document\\
+#+ATTR_REVEAL: :frag (appear)
+ - *Authenticity* (a person who signed the document deliberately did so)
+ - *Unforgeable* (nobody else cannot act on behalf of a person)
+ - *Non-repudiation* (once a document is digitally signed, the signer of the document cannot say that they did not sign the document)
+
+** Public-key Cryptography
+A pair of keys
+ - /public key/ may be disseminated widely
+ - /private key/ known only to the owner
+-----
+ - The owner can sign a message with the /private key/
+ - Anyone can verify the signature with the corresponding /public key/
+
+** Digital Signature with Public-key Cryptography
+#+ATTR_REVEAL: :frag (appear)
+   1. Alice generates a pair of keys (/public/ and /private/)
+   2. Alice securely communicates the /public key/ to Bob (in person)
+   3. Later Alice signs a message with her /private key/
+   4. Alice sends the message and the /signature/ to Bob over an insecure channel
+   5. Bob receives it and verifies the signature of the message with Alice's /public key/
+
+** Simple Application
+#+ATTR_REVEAL: :frag (appear)
+   1. Alice and Bob want to place bets on a sport event
+   2. They make their bets and sign them
+   3. They exchange the bets and signatures
+   4. After the event if Bob won, Alice cannot revoke her bet
+* Ledger
+#+BEGIN_NOTES
+If you want to build a financial system you need to keep track of all transactions
+#+END_NOTES
+
+#+ATTR_REVEAL: :frag (appear)
+The principal book for recording and totaling economic transactions
+#+ATTR_REVEAL: :frag (appear)
+ - Account-based ledger (e.g. banking system — who owns what)
+ - *Coin-based* ledger (e.g. diamond tracking system — what diamond is owned by whom)
+
+** Account-based Ledger
+*Who* owns what (e.g. banking system)
+#+ATTR_REVEAL: :frag (appear)
+[[../imgs/account-based-ledger.png]]
+
+** Coin-based Ledger
+*What* is owned by whom (e.g. diamond tracking system)
+#+ATTR_REVEAL: :frag (appear)
+[[../imgs/coin-based-ledger.png]]
+
+** Land Ledger
+#+ATTR_HTML: :height 500;
+#+ATTR_REVEAL: :frag (appear)
+[[../imgs/land-ledger.png]]
+
+** Transaction
+   - In a coin-bases ledger a /transaction/ is a change of coin's ownership
+   - Transactions form a /graph/ of coins' ownership
+
+*** Like a Legal Document
+*Transaction Y*\\
+Hereby I am transferring ownership of my land *A* I received in _transaction X_ in parts:
+ - _one half_ of the land to _Bob_
+ - _the second half_ of the land ton myself _(Alice)_
+_Alice's signature_
+
+* Bitcoin Ledger
+  - Bitcoin ledger tracks individual *coins* (it does not have accounts)
+  - Ownership of a coin is tracked by associated /public key/[fn:1:Coins' ownership is tracked by a /script/, which in the simplest form is a public key]
+
+* Bitcoin Transaction
+** Like a Legal Document
+*Transaction Y*\\
+Hereby I am transferring ownership of my 2.7 coins I received in _the first output of transaction X_ in parts:
+ - _2.4_ coins to Bob identified by _Bob's public key_,
+ - _0.2_ coins to Carol identified by _Carol's public key_.
+I voluntarily pay 0.1 coin as a fee for the service.\\
+_Alice's signature_
+
+** Transaction Structure
+#+ATTR_REVEAL: :frag (appear)
+   - *Inputs* referring to the previous coins
+     - the first output of transaction X
+   - *Outputs* stating amounts and receivers' public keys
+     - 2.4 to Bob's public key
+     - 0.2 to Carol's public key
+   - *Signatures* proving authenticity of the owners
+     - Alice's signature
+   - /(Implicit)/ *Identifier* is a /hash/ of the transaction
+   - /(Implicit)/ *Fee* is calculated as a difference between amounts of all outputs and amounts of all inputs
+
+** Transactions Graph
+[[../imgs/transactions.png]]
+
+** What is Address?
+   - A bitcoin *address* is just a (modified) /public key/
+   - An address *balance* is an abstraction provided by wallets showing how many coins are tracked by the corresponding /public key/
+(like a pocket wallet does not have balance, but has coins)
+** Double-Spending Problem
+#+ATTR_REVEAL: :frag (appear)
+   - When Bob receives a transaction from Alice, should he send goods Alice?
+   - What prevents Alice from creating another transaction with the same inputs, but outputs to Carol?
+   - Bitcoin solves *double-spending* problem and implement *digital scarcity* without a central authority
+
+* Summary
+  - Bitcoin /ledger/ is a coin-based ledger, it tracks coins
+  - Bitcoin /transaction/ is a change of coin's ownership
+  - Bitcoin transactions form a /graph/ of coins' ownership
+
+* Questions?
