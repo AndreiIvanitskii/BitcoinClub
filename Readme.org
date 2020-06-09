@@ -14,4 +14,4 @@ Here are slides and notes from the club meetings.
 
 ** Bitcoin Transaction
    - Presentation: Bitcoin Transaction ([[./03_Transaction/01_Transaction.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/03_Transaction/01_Transaction.html][presentation view]])
-   - Workshop: Transaction Explorer ([[./03_Transaction/02_Transaction_Explorer.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/03_Transaction/02_Transaction_Explorer.html][presentation view]])
+   - Workshop: Transaction Explorer ([[./03_Transaction/02_Transaction_Explorer.org][one page view]])

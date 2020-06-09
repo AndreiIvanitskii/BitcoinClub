@@ -1,6 +1,6 @@
 #+STARTUP: hidestars
 
-#+TITLE: Bitcoin Transactions
+#+TITLE: Bitcoin Transaction
 #+AUTHOR: Andrei Ivanitskii
 #+DATE: June 4, 2020
 

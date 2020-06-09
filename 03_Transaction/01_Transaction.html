@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Bitcoin Transaction</title>
+<meta name="author" content="Andrei Ivanitskii"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./../imgs/transactions-screenshot.jpg">
+<h1>Bitcoin Transaction</h1>
+<h3>Andrei Ivanitskii</h3>
+<h4>June 4, 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+<div class="keyboard-usage">
+    <p>(Press <b>?</b> for help, <b>n</b> and <b>p</b> for next and previous slide)</p>
+</div>
+
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Cryptography</h2>
+<p>
+A science about various aspects in information security such as data confidentiality, data integrity, authentication, and non-repudiation
+</p>
+<p class="fragment (appear)">
+Traditionally participants in cryptographic schemes and protocols are named: Alice, Bob, Carol, &#x2026;
+</p>
+
+</section>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1</span> Digital Signature</h3>
+<p>
+A mathematical scheme for verifying the <i>authenticity</i> of a digital message or a digital document<br />
+</p>
+<ul>
+<li class="fragment appear"><b>Authenticity</b> (a person who signed the document deliberately did so)</li>
+<li class="fragment appear"><b>Unforgeable</b> (nobody else cannot act on behalf of a person)</li>
+<li class="fragment appear"><b>Non-repudiation</b> (once a document is digitally signed, the signer of the document cannot say that they did not sign the document)</li>
+
+</ul>
+
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2</span> Public-key Cryptography</h3>
+<p>
+A pair of keys
+</p>
+<ul>
+<li><i>public key</i> may be disseminated widely</li>
+<li><i>private key</i> known only to the owner</li>
+
+</ul>
+<hr />
+<ul>
+<li>The owner can sign a message with the <i>private key</i></li>
+<li>Anyone can verify the signature with the corresponding <i>public key</i></li>
+
+</ul>
+
+</section>
+<section id="slide-1-3">
+<h3 id="1-3"><span class="section-number-3">1.3</span> Digital Signature with Public-key Cryptography</h3>
+<ol>
+<li class="fragment appear">Alice generates a pair of keys (<i>public</i> and <i>private</i>)</li>
+<li class="fragment appear">Alice securely communicates the <i>public key</i> to Bob (in person)</li>
+<li class="fragment appear">Later Alice signs a message with her <i>private key</i></li>
+<li class="fragment appear">Alice sends the message and the <i>signature</i> to Bob over an insecure channel</li>
+<li class="fragment appear">Bob receives it and verifies the signature of the message with Alice's <i>public key</i></li>
+
+</ol>
+
+</section>
+<section id="slide-1-4">
+<h3 id="1-4"><span class="section-number-3">1.4</span> Simple Application</h3>
+<ol>
+<li class="fragment appear">Alice and Bob want to place bets on a sport event</li>
+<li class="fragment appear">They make their bets and sign them</li>
+<li class="fragment appear">They exchange the bets and signatures</li>
+<li class="fragment appear">After the event if Bob won, Alice cannot revoke her bet</li>
+
+</ol>
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Ledger</h2>
+<aside class="notes">
+<p>
+If you want to build a financial system you need to keep track of all transactions
+</p>
+
+</aside>
+
+<p class="fragment (appear)">
+The principal book for recording and totaling economic transactions
+</p>
+
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1</span> Account-based Ledger</h3>
+<p>
+<b>Who</b> owns what (e.g. banking system)
+</p>
+
+<div class="figure">
+<p><img src="../imgs/account-based-ledger.png" alt="account-based-ledger.png" class="fragment (appear)" />
+</p>
+</div>
+
+</section>
+<section id="slide-2-2">
+<h3 id="2-2"><span class="section-number-3">2.2</span> Coin-based Ledger</h3>
+<p>
+<b>What</b> is owned by whom (e.g. diamond tracking system)
+</p>
+
+<div class="figure">
+<p><img src="../imgs/coin-based-ledger.png" alt="coin-based-ledger.png" class="fragment (appear)" />
+</p>
+</div>
+
+</section>
+<section id="slide-2-3">
+<h3 id="2-3"><span class="section-number-3">2.3</span> Land Ledger</h3>
+
+<div class="figure">
+<p><img src="../imgs/land-ledger.png" alt="land-ledger.png" class="fragment (appear)" height="500;" />
+</p>
+</div>
+
+</section>
+<section id="slide-2-4">
+<h3 id="2-4"><span class="section-number-3">2.4</span> Transaction</h3>
+<ul>
+<li>In a coin-bases ledger a <i>transaction</i> is a change of coin's ownership</li>
+<li>Transactions form a <i>graph</i> of coins' ownership</li>
+
+</ul>
+
+</section>
+<section id="slide-2-4-1">
+<h4 id="2-4-1"><span class="section-number-4">2.4.1</span> Like a Legal Document</h4>
+<p>
+<b>Transaction Y</b><br />
+Hereby I am transferring ownership of my land <b>A</b> I received in <span class="underline">transaction X</span> in parts:
+</p>
+<ul>
+<li><span class="underline">one half</span> of the land to <span class="underline">Bob</span></li>
+<li><span class="underline">the second half</span> of the land to myself <span class="underline">(Alice)</span></li>
+
+</ul>
+<p>
+<span class="underline">Alice's signature</span>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Bitcoin Ledger</h2>
+<ul>
+<li>Bitcoin ledger tracks individual <b>coins</b> (it does not have accounts)</li>
+<li>Ownership of a coin is tracked by associated <i>public key</i><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Bitcoin Transaction</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-4-1">
+<h3 id="4-1"><span class="section-number-3">4.1</span> Like a Legal Document</h3>
+<p>
+<b>Transaction Y</b><br />
+Hereby I am transferring ownership of my 2.7 coins I received in <span class="underline">the first output of transaction X</span> in parts:
+</p>
+<ul>
+<li><span class="underline">2.4</span> coins to Bob identified by <span class="underline">Bob's public key</span>,</li>
+<li><span class="underline">0.2</span> coins to Carol identified by <span class="underline">Carol's public key</span>.</li>
+
+</ul>
+<p>
+I voluntarily pay 0.1 coin as a fee for the service.<br />
+<span class="underline">Alice's signature</span>
+</p>
+
+</section>
+<section id="slide-4-2">
+<h3 id="4-2"><span class="section-number-3">4.2</span> Transaction Structure</h3>
+<ul>
+<li class="fragment appear"><b>Inputs</b> referring to the previous coins
+<ul>
+<li>the first output of transaction X</li>
+
+</ul></li>
+<li class="fragment appear"><b>Outputs</b> stating amounts and receivers' public keys
+<ul>
+<li>2.4 to Bob's public key</li>
+<li>0.2 to Carol's public key</li>
+
+</ul></li>
+<li class="fragment appear"><b>Signatures</b> proving authenticity of the owners
+<ul>
+<li>Alice's signature</li>
+
+</ul></li>
+<li class="fragment appear"><i>(Implicit)</i> <b>Identifier</b> is a <i>hash</i> of the transaction</li>
+<li class="fragment appear"><i>(Implicit)</i> <b>Fee</b> is calculated as a difference between amounts of all outputs and amounts of all inputs</li>
+
+</ul>
+
+</section>
+<section id="slide-4-3">
+<h3 id="4-3"><span class="section-number-3">4.3</span> Transactions Graph</h3>
+
+<div class="figure">
+<p><img src="../imgs/transactions.png" alt="transactions.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-4-4">
+<h3 id="4-4"><span class="section-number-3">4.4</span> What is Address?</h3>
+<ul>
+<li>A bitcoin <b>address</b> is just a (modified) <i>public key</i></li>
+<li>An address <b>balance</b> is an abstraction provided by wallets showing how many coins are tracked by the corresponding <i>public key</i></li>
+
+</ul>
+<p>
+(like a pocket wallet does not have balance, but has coins)
+</p>
+</section>
+<section id="slide-4-5">
+<h3 id="4-5"><span class="section-number-3">4.5</span> Double-Spending Problem</h3>
+<ul>
+<li class="fragment appear">When Bob receives a transaction from Alice, should he send goods Alice?</li>
+<li class="fragment appear">What prevents Alice from creating another transaction with the same inputs, but outputs to Carol?</li>
+<li class="fragment appear">Bitcoin solves <b>double-spending</b> problem and implement <b>digital scarcity</b> without a central authority</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Summary</h2>
+<ul>
+<li>Bitcoin <i>ledger</i> is a coin-based ledger, it tracks coins</li>
+<li>Bitcoin <i>transaction</i> is a change of coin's ownership</li>
+<li>Bitcoin transactions form a <i>graph</i> of coins' ownership</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Questions?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
