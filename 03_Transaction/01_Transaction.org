@@ -53,9 +53,6 @@ If you want to build a financial system you need to keep track of all transactio
 
 #+ATTR_REVEAL: :frag (appear)
 The principal book for recording and totaling economic transactions
-#+ATTR_REVEAL: :frag (appear)
- - Account-based ledger (e.g. banking system — who owns what)
- - *Coin-based* ledger (e.g. diamond tracking system — what diamond is owned by whom)
 
 ** Account-based Ledger
 *Who* owns what (e.g. banking system)
@@ -80,7 +77,7 @@ The principal book for recording and totaling economic transactions
 *Transaction Y*\\
 Hereby I am transferring ownership of my land *A* I received in _transaction X_ in parts:
  - _one half_ of the land to _Bob_
- - _the second half_ of the land ton myself _(Alice)_
+ - _the second half_ of the land to myself _(Alice)_
 _Alice's signature_
 
 * Bitcoin Ledger

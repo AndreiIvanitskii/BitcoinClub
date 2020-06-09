@@ -1,0 +1,21 @@
+#+STARTUP: hidestars
+
+#+TITLE: Transaction Explorer
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: June 4, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../imgs/explorer.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+
+* Title
+#+ATTR_REVEAL: :frag (appear)
+#+BEGIN_NOTES
+Notes
+#+END_NOTES
+* Questions?
