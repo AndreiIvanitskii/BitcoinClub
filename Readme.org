@@ -11,3 +11,7 @@ Here are slides and notes from the club meetings.
 ** Money
    - Presentation: What is Money? ([[./02_Money/01_Presentation_What_is_Money.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/02_Money/01_Presentation_What_is_Money.html][presentation view]])
    - Workshop: Desktop Wallet ([[./02_Money/02_Workshop_Desktop_Wallet.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/02_Money/02_Workshop_Desktop_Wallet.html][presentation view]])
+
+** Bitcoin Transaction
+   - Presentation: Bitcoin Transaction ([[./03_Transaction/01_Transaction.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/03_Transaction/01_Transaction.html][presentation view]])
+   - Workshop: Transaction Explorer ([[./03_Transaction/02_Transaction_Explorer.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/03_Transaction/02_Transaction_Explorer.html][presentation view]])
