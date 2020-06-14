@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Биткоин транзакция</title>
+<meta name="author" content="Андрей Иваницкий"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom-ru.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./../imgs/transactions-screenshot.jpg">
+<h1>Биткоин транзакция</h1>
+<h3>Андрей Иваницкий</h3>
+<h4>11 июля 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+<div class="keyboard-usage">
+    <p>(Нажмите <b>?</b> для получения помощи, <b>n</b> и <b>p</b> для следующего и предыдущего слайда соответственно)</p>
+</div>
+
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Криптография</h2>
+<p>
+Наука о различных аспектах информационной безопасности, таких как конфиденциальность данных, целостность данных, аутентификация, невозможность отказа от авторства
+</p>
+<p class="fragment (appear)">
+Традиционно участников криптографических схем и протоколов называют: Алиса, Боб, Кэрол, &#x2026;
+</p>
+
+</section>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1</span> Цифровая подпись</h3>
+<p>
+Математическая схема для проверки подлинности цифрового сообщения или цифрового документа 
+</p>
+<ul>
+<li class="fragment appear"><b>Подлинность</b> (человек, подписавший документ, намеренно сделал это)</li>
+<li class="fragment appear"><b>Неподдельность</b> (никто не может действовать от имени автора)</li>
+<li class="fragment appear"><b>Невозможность отказа</b> (после того, как документ подписан цифровой подписью, человек, подписавший документ, не может сказать, что он не подписывал документ)</li>
+
+</ul>
+
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2</span> Криптосистема с открытым ключом</h3>
+<p>
+Пара ключей
+</p>
+<ul>
+<li><i>открытый ключ</i> может быть распространён широко</li>
+<li><i>секретный ключ</i> известный только владельцу</li>
+
+</ul>
+<hr />
+<ul>
+<li>Владелец может подписать сообщение с помощью <i>секретного ключа</i></li>
+<li>Любой человек может проверить подпись используя соответствующий <i>открытый ключ</i></li>
+
+</ul>
+
+</section>
+<section id="slide-1-3">
+<h3 id="1-3"><span class="section-number-3">1.3</span> Цифровая подпись в криптосистеме с открытым ключом</h3>
+<ol>
+<li class="fragment appear">Алиса генерирует пару ключей (<i>открытый</i> и <i>секретный</i>)</li>
+<li class="fragment appear">Алиса надёжно передаёт свой <i>открытый ключ</i> Бобу (лично)</li>
+<li class="fragment appear">Позже Алиса подписывает сообщение с помощью <i>секретного ключа</i></li>
+<li class="fragment appear">Алиса посылает своё сообщение и <i>подпись</i> Бобу по открытому каналу</li>
+<li class="fragment appear">Боб, получив это, проверяет подпись, используя <i>открытый ключ</i> Алисы</li>
+
+</ol>
+
+</section>
+<section id="slide-1-4">
+<h3 id="1-4"><span class="section-number-3">1.4</span> Простой пример использования</h3>
+<ol>
+<li class="fragment appear">Алиса и Боб хотят сделать ставки на исход некого спортивного мероприятия</li>
+<li class="fragment appear">Они делают свои ставки и подписывают их</li>
+<li class="fragment appear">Они обмениваются своими ставками и подписями</li>
+<li class="fragment appear">После мероприятия, если Боб выиграл, Алиса не может отозвать свою ставку</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Система учёта (гроссбух)</h2>
+<aside class="notes">
+<p>
+Если вы хотите построить финансовую систему, вам надо вести учёт всех транзакций
+</p>
+
+</aside>
+
+<p class="fragment (appear)">
+Сводный документ, в котором ведётся учёт транзакций и представляются итоговые данные по бухгалтерским отчётам и счетам
+</p>
+
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1</span> Учёт на основе счетов</h3>
+<p>
+<b>Кто</b> владеет чем (например, банковская система)
+</p>
+
+<div class="figure">
+<p><img src="../imgs/account-based-ledger.png" alt="account-based-ledger.png" class="fragment (appear)" />
+</p>
+</div>
+
+</section>
+<section id="slide-2-2">
+<h3 id="2-2"><span class="section-number-3">2.2</span> Учёт на основе монет</h3>
+<p>
+<b>Что</b> пренадлежит кому (например, система отслеживания алмазов)
+</p>
+
+<div class="figure">
+<p><img src="../imgs/coin-based-ledger.png" alt="coin-based-ledger.png" class="fragment (appear)" />
+</p>
+</div>
+
+</section>
+<section id="slide-2-3">
+<h3 id="2-3"><span class="section-number-3">2.3</span> Земельный реестр</h3>
+
+<div class="figure">
+<p><img src="../imgs/land-ledger.png" alt="land-ledger.png" class="fragment (appear)" height="500;" />
+</p>
+</div>
+
+</section>
+<section id="slide-2-4">
+<h3 id="2-4"><span class="section-number-3">2.4</span> Транзакция</h3>
+<ul>
+<li>В системах учёта на основе монет <i>транзакция</i> — это смена владельца монеты</li>
+<li>Транзакции формируют <i>граф</i> владения монет</li>
+
+</ul>
+
+</section>
+<section id="slide-2-4-1">
+<h4 id="2-4-1"><span class="section-number-4">2.4.1</span> Как юридический документ</h4>
+<p>
+<b>Транзакция Y</b><br />
+Я, Алиса, передаю владение моей землёй <b>A</b>, которую я получила в <span class="underline">транзакции X</span>, следующими частями:
+</p>
+<ul>
+<li><span class="underline">одну половину</span> земли — <span class="underline">Бобу</span></li>
+<li><span class="underline">вторую половину</span> земли я оставляю себе <span class="underline">(Алисе)</span></li>
+
+</ul>
+<p>
+<span class="underline">Подпись Алисы</span>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Система учёта биткоина</h2>
+<ul>
+<li>Система учёта биткоина ведёт учёт индивидуальных <b>монет</b> (нет аккаунтов)</li>
+<li>Учёт владение монетой ведётся с помощью ассоциированного <i>открытого ключа</i><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Биткоин транзакция</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-4-1">
+<h3 id="4-1"><span class="section-number-3">4.1</span> Как юридический документ</h3>
+<p>
+<b>Транзакция Y</b><br />
+Я, Алиса, передаю владение моими 2.7 монетами, которые я получила в <span class="underline">первом выходе транзакции X</span>, следующими частями:
+</p>
+<ul>
+<li><span class="underline">2.4</span> монеты Бобу, идентифицируемым <span class="underline">открытым ключом Боба</span></li>
+<li><span class="underline">0.2</span> монеты Кэрол, идентифицируемой <span class="underline">открытым ключом Кэрол</span></li>
+
+</ul>
+<p>
+Я добровольно плачу 0.1 монеты в качестве комиссии за сервис.<br />
+<span class="underline">Подпись Алисы</span>
+</p>
+
+</section>
+<section id="slide-4-2">
+<h3 id="4-2"><span class="section-number-3">4.2</span> Структура транзакции</h3>
+<ul>
+<li class="fragment appear"><b>Входы</b> ссылаются на выходы предыдущих транзакций
+<ul>
+<li>первый выход транзакции X</li>
+
+</ul></li>
+<li class="fragment appear"><b>Выходы</b> указывают количество монет и публичный ключ получателя
+<ul>
+<li>2.4 публичному ключу Боба</li>
+<li>0.2 публичному ключу Кэрол</li>
+
+</ul></li>
+<li class="fragment appear"><b>Подписи</b>  аутентифицирует владельцев
+<ul>
+<li>подпись Алисы</li>
+
+</ul></li>
+<li class="fragment appear"><i>(Неявно)</i> <b>Идентификатор</b> — это <i>хэш</i> транзакции</li>
+<li class="fragment appear"><i>(Неявно)</i> <b>Комиссия</b> вычисляется как разница между суммами выходов и входов транзакции</li>
+
+</ul>
+
+</section>
+<section id="slide-4-3">
+<h3 id="4-3"><span class="section-number-3">4.3</span> Граф транзакций</h3>
+
+<div class="figure">
+<p><img src="../imgs/transactions.png" alt="transactions.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-4-4">
+<h3 id="4-4"><span class="section-number-3">4.4</span> Что такое адрес?</h3>
+<ul>
+<li>Биткоин <b>адрес</b> — это просто (несколько модифицированный) <i>открытый ключ</i></li>
+<li><b>Баланс</b> адреса — абстракция кошелька показывающая общее количество монет контролируемых соответствующим <i>открытым ключом</i></li>
+
+</ul>
+<p>
+(как и бумажник не имеет баланса, но имеет монеты)
+</p>
+
+</section>
+<section id="slide-4-5">
+<h3 id="4-5"><span class="section-number-3">4.5</span> Проблема двойного расходования</h3>
+<ul>
+<li class="fragment appear">Если Боб получил транзакцию от Алисы, должен ли он послать товар Алисе?</li>
+<li class="fragment appear">Что мешает Алисе создать другую транзакцию с теми же входами, но выходами для Кэрол?</li>
+<li class="fragment appear">Биткоин решает проблему <b>двойного расходования</b> и реализует <b>цифровую редкость (ограниченность)</b> без центрального органа власти</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Резюме</h2>
+<ul>
+<li><i>Система учёта</i> биткоина — это учёт на основе монет</li>
+<li>Биткоин <i>транзакция</i> — смена владельца монеты</li>
+<li>Биткоин транзакции формируют <i>граф</i> владения монет</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Вопросы?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
