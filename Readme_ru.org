@@ -8,3 +8,6 @@
 ** Деньги
    - Презентация: Что такое деньги? ([[./02_Money_ru/01_Presentation_What_is_Money.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/02_Money_ru/01_Presentation_What_is_Money.html][вид слайдов]])
    - Практика: Кошелёк для ПК ([[./02_Money_ru/02_Workshop_Desktop_Wallet.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/02_Money_ru/02_Workshop_Desktop_Wallet.html][вид слайдов]])
+** Биткоин транзакция
+   - Презентация: Биткоин транзакция ([[./03_Transaction_ru/01_Transaction.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/03_Transaction_ru/01_Transaction.html][вид слайдов]])
+   - Практика: Обозреватель транзакций ()
