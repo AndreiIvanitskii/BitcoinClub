@@ -1,0 +1,124 @@
+#+STARTUP: hidestars
+
+#+TITLE: Blockchain
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: June 27, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../ext/pixabay/club.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+* Cryptography
+** Cryptographic Hash Function
+ A one-way function taking any data (a message) returning a fixed-size string (a hash)
+  #+ATTR_REVEAL: :frag (appear)
+  - *Deterministic* (the same message results in the same hash)
+  - *Quick* to compute the hash for a message
+  - *Infeasible* to compute a message that yields a given hash
+
+*** Simple Implementation
+    1. Get a message
+    2. Peek every second letter
+    3. If the message is longer than 5 characters go to step 2
+
+*** Example
+     #+ATTR_REVEAL: :frag (appear)
+     1. ~Bitcoin is the King~ message
+     2. ~_i_c_i_ _s_t_e_K_n_~ 9 characters
+     3. ~___c___ ___t___K___~ 4 characters
+     4. ~c tK~ hash
+ #+BEGIN_NOTES
+  - Such function is deterministic
+  - Easy to compute the hash
+ #+END_NOTES
+
+*** Another Example
+     #+ATTR_REVEAL: :frag (appear)
+     1. ~tn  g~ hash
+     2. ~___t___n___ ___ ___g~
+     3. ~_u_t_o_n_i_ _h_ _i_g~
+     4. ~Buttcoin is the King~ message
+ #+ATTR_REVEAL: :frag (appear)
+ hash(~Bitcoin is the King~) = ~c tK~\\
+ hash(~Buttcoin is the King~) = ~tn  g~
+ #+BEGIN_NOTES
+  - Difficult to come up with a message yielding a given hash
+  - A small change in the message results in a very different hash
+ #+END_NOTES
+
+*** Simple Application
+ Alice shares a hash of a solution for a problem without revealing the solution itself
+
+*** SHA-256
+*SHA-256* is a cryptographic hash function used in bitcoin
+#+ATTR_REVEAL: :frag (appear)
+#+BEGIN_SRC python
+>>> hashlib.sha256('Bitcoin').hexdigest()
+'b4056df6691f8dc72e56302ddad345d65fead3ead9299609a826e2344eb63aa4'
+#+END_SRC
+
+** Cryptographic Puzzle
+A difficult to solve problem, but easy to verify
+
+*** Simple Analogy — Sudoku
+[[../imgs/sudoku.png]]
+
+*** Difficulty Adjustment
+More rows and columns — more difficult to solve
+
+* Bitcoin Blockchain
+A database of bitcoin transactions organized as a chain of /blocks/
+#+ATTR_REVEAL: :frag (appear)
+[[../imgs/blockchain.png]]
+
+* Double-Spending Problem
+A problem in a digital cash schemes that the same single digital token can be spent more than once
+
+** Centralized Solution
+A /central authority/ maintaining a database
+ - Anyone can read
+ - The central authority adds new block every 10 minutes
+
+*** Problem
+The central authority can
+ - override transactions
+ - censor transactions
+
+*** Synchronization
+The central authority serves as a /synchronization/ mechanism
+
+
+* Decentralized Solution
+** Let Anyone Add New Blocks
+#+ATTR_REVEAL: :frag (appear)
+We will get a tree if anyone can create new blocks...
+#+ATTR_REVEAL: :frag (appear)
+[[../imgs/block-tree.png]]
+
+** Solution
+   - Make it hard (requiring /proof of work/)
+   - Only the *longest*[fn:1:With the most cumulative work] chain is valid
+#+ATTR_REVEAL: :frag (appear)
+[[../imgs/block-tree-longest.png]]
+
+** Difficulty Adjustment
+#+ATTR_REVEAL: :frag (appear)
+Adjust amount of required /work/ (difficulty) to add new block such that on average the whole network finds a new block every *10 minutes*
+
+** Motivation
+*Reward*
+ - Block subsidy (*6.25* bitcoin as of June 2020)
+ - Transactions' fee
+
+* Summary
+Bitcoin blockchain
+  - Anyone can search for a block
+  - Only a block with a proof of required *work* is valid
+  - Only the *longest* chain is valid
+  - Adjust *difficulty* to get a new block every 10 minutes
+
+* Questions?

@@ -116,7 +116,7 @@ _Alice's signature_
 #+ATTR_REVEAL: :frag (appear)
    - When Bob receives a transaction from Alice, should he send goods Alice?
    - What prevents Alice from creating another transaction with the same inputs, but outputs to Carol?
-   - Bitcoin solves *double-spending* problem and implement *digital scarcity* without a central authority
+   - Bitcoin solves *double-spending* problem and implements *digital scarcity* without a central authority
 
 * Summary
   - Bitcoin /ledger/ is a coin-based ledger, it tracks coins

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Blockchain</title>
+<meta name="author" content="Andrei Ivanitskii"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./../ext/pixabay/club.jpg">
+<h1>Blockchain</h1>
+<h3>Andrei Ivanitskii</h3>
+<h4>June 27, 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+<div class="keyboard-usage">
+    <p>(Press <b>?</b> for help, <b>n</b> and <b>p</b> for next and previous slide)</p>
+</div>
+
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Cryptography</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1</span> Cryptographic Hash Function</h3>
+<p>
+A one-way function taking any data (a message) returning a fixed-size string (a hash)
+</p>
+<ul>
+<li class="fragment appear"><b>Deterministic</b> (the same message results in the same hash)</li>
+<li class="fragment appear"><b>Quick</b> to compute the hash for a message</li>
+<li class="fragment appear"><b>Infeasible</b> to compute a message that yields a given hash</li>
+
+</ul>
+
+</section>
+<section id="slide-1-1-1">
+<h4 id="1-1-1"><span class="section-number-4">1.1.1</span> Simple Implementation</h4>
+<ol>
+<li>Get a message</li>
+<li>Peek every second letter</li>
+<li>If the message is longer than 5 characters go to step 2</li>
+
+</ol>
+
+</section>
+<section id="slide-1-1-2">
+<h4 id="1-1-2"><span class="section-number-4">1.1.2</span> Example</h4>
+<ol>
+<li class="fragment appear"><code>Bitcoin is the King</code> message</li>
+<li class="fragment appear"><code>_i_c_i_ _s_t_e_K_n_</code> 9 characters</li>
+<li class="fragment appear"><code>___c___ ___t___K___</code> 4 characters</li>
+<li class="fragment appear"><code>c tK</code> hash</li>
+
+</ol>
+<aside class="notes">
+<ul>
+<li>Such function is deterministic</li>
+<li>Easy to compute the hash</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-1-1-3">
+<h4 id="1-1-3"><span class="section-number-4">1.1.3</span> Another Example</h4>
+<ol>
+<li class="fragment appear"><code>tn  g</code> hash</li>
+<li class="fragment appear"><code>___t___n___ ___ ___g</code></li>
+<li class="fragment appear"><code>_u_t_o_n_i_ _h_ _i_g</code></li>
+<li class="fragment appear"><code>Buttcoin is the King</code> message</li>
+
+</ol>
+<p class="fragment (appear)">
+hash(<code>Bitcoin is the King</code>) = <code>c tK</code><br />
+hash(<code>Buttcoin is the King</code>) = <code>tn  g</code>
+</p>
+<aside class="notes">
+<ul>
+<li>Difficult to come up with a message yielding a given hash</li>
+<li>A small change in the message results in a very different hash</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-1-1-4">
+<h4 id="1-1-4"><span class="section-number-4">1.1.4</span> Simple Application</h4>
+<p>
+Alice shares a hash of a solution for a problem without revealing the solution itself
+</p>
+
+</section>
+<section id="slide-1-1-5">
+<h4 id="1-1-5"><span class="section-number-4">1.1.5</span> SHA-256</h4>
+<p>
+<b>SHA-256</b> is a cryptographic hash function used in bitcoin
+</p>
+<div class="org-src-container">
+
+<pre  class="fragment (appear)">&gt;&gt;&gt; hashlib.sha256(<span style="color: #7FA0B7;">'Bitcoin'</span>).hexdigest()
+<span style="color: #808e9b;">'b4056df6691f8dc72e56302ddad345d65fead3ead9299609a826e2344eb63aa4'</span>
+</pre>
+</div>
+
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2</span> Cryptographic Puzzle</h3>
+<p>
+A difficult to solve problem, but easy to verify
+</p>
+
+</section>
+<section id="slide-1-2-1">
+<h4 id="1-2-1"><span class="section-number-4">1.2.1</span> Simple Analogy — Sudoku</h4>
+
+<div class="figure">
+<p><img src="../imgs/sudoku.png" alt="sudoku.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-1-2-2">
+<h4 id="1-2-2"><span class="section-number-4">1.2.2</span> Difficulty Adjustment</h4>
+<p>
+More rows and columns — more difficult to solve
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Bitcoin Blockchain</h2>
+<p>
+A database of bitcoin transactions organized as a chain of <i>blocks</i>
+</p>
+
+<div class="figure">
+<p><img src="../imgs/blockchain.png" alt="blockchain.png" class="fragment (appear)" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Double-Spending Problem</h2>
+<p>
+A problem in a digital cash schemes that the same single digital token can be spent more than once
+</p>
+
+</section>
+<section id="slide-3-1">
+<h3 id="3-1"><span class="section-number-3">3.1</span> Centralized Solution</h3>
+<p>
+A <i>central authority</i> maintaining a database
+</p>
+<ul>
+<li>Anyone can read</li>
+<li>The central authority adds new block every 10 minutes</li>
+
+</ul>
+
+</section>
+<section id="slide-3-1-1">
+<h4 id="3-1-1"><span class="section-number-4">3.1.1</span> Problem</h4>
+<p>
+The central authority can
+</p>
+<ul>
+<li>override transactions</li>
+<li>censor transactions</li>
+
+</ul>
+
+</section>
+<section id="slide-3-1-2">
+<h4 id="3-1-2"><span class="section-number-4">3.1.2</span> Synchronization</h4>
+<p>
+The central authority serves as a <i>synchronization</i> mechanism
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Decentralized Solution</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-4-1">
+<h3 id="4-1"><span class="section-number-3">4.1</span> Let Anyone Add New Blocks</h3>
+<p class="fragment (appear)">
+We will get a tree if anyone can create new blocks&#x2026;
+</p>
+
+<div class="figure">
+<p><img src="../imgs/block-tree.png" alt="block-tree.png" class="fragment (appear)" />
+</p>
+</div>
+
+</section>
+<section id="slide-4-2">
+<h3 id="4-2"><span class="section-number-3">4.2</span> Solution</h3>
+<ul>
+<li>Make it hard (requiring <i>proof of work</i>)</li>
+<li>Only the <b>longest</b><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> chain is valid</li>
+
+</ul>
+
+<div class="figure">
+<p><img src="../imgs/block-tree-longest.png" alt="block-tree-longest.png" class="fragment (appear)" />
+</p>
+</div>
+
+</section>
+<section id="slide-4-3">
+<h3 id="4-3"><span class="section-number-3">4.3</span> Difficulty Adjustment</h3>
+<p class="fragment (appear)">
+Adjust amount of required <i>work</i> (difficulty) to add new block such that on average the whole network find a new block every <b>10 minutes</b>
+</p>
+
+</section>
+<section id="slide-4-4">
+<h3 id="4-4"><span class="section-number-3">4.4</span> Motivation</h3>
+<p>
+<b>Reward</b>
+</p>
+<ul>
+<li>Block subsidy (<b>6.25</b> bitcoin as of June 2020)</li>
+<li>Transactions' fee</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Summary</h2>
+<p>
+Bitcoin blockchain
+</p>
+<ul>
+<li>Anyone can search for a block</li>
+<li>Only a block with a proof of required <b>work</b> is valid</li>
+<li>Only the <b>longest</b> chain is valid</li>
+<li>Adjust <b>difficulty</b> to get a new block every 10 minutes</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Questions?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
