@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Монетарная политика биткоина</title>
+<meta name="author" content="Андрей Иваницкий"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="../ext/reveal.js-3.9.2/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="../ext/custom-ru.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../ext/reveal.js-3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./../imgs/stars.jpg">
+<h1>Монетарная политика биткоина</h1>
+<h3>Андрей Иваницкий</h3>
+<h4>9 июля 2020</h4>
+<a href="../LICENSE">
+  Creative Commons Zero 1.0 Universal
+</a>
+<div class="keyboard-usage">
+    <p>(Нажмите <b>?</b> для получения помощи, <b>n</b> и <b>p</b> для следующего и предыдущего слайда соответственно)</p>
+</div>
+
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Монетарная политика</h2>
+<p>
+Меры, принимаемые правительствами для оказания влияния на экономическую активность, а именно, <i>управление предложением денег</i> и кредита, также за счет изменения процентных ставок
+</p>
+
+<p class="fragment (appear)">
+<i>Сколько печатать денег</i>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Монетарная политика биткоина</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1</span> Награда</h3>
+<ul>
+<li><span class="underline">Субсидия</span> за блок (<b>6.25</b> биткоинов на июнь 2020)</li>
+<li>Комиссии за транзакции</li>
+
+</ul>
+
+</section>
+<section id="slide-2-2">
+<h3 id="2-2"><span class="section-number-3">2.2</span> Субсидия</h3>
+<ul>
+<li>50 биткоинов за блок</li>
+<li>каждые 210'000 блоков (~4 года) субсидия уменьшается вдвое</li>
+<li>пока не достигнет нуля</li>
+
+</ul>
+
+</section>
+<section id="slide-2-3">
+<h3 id="2-3"><span class="section-number-3">2.3</span> Уполовинивание</h3>
+<p>
+Halving (halvening) — момент в истории майнинга биткоина, когда субсидия за блок уменьшается вдвое
+</p>
+<ol>
+<li class="fragment appear">эпоха — 3 января <b>2009</b> субсидия составляла <b>50</b></li>
+<li class="fragment appear">эпоха — 28 ноября <b>2012</b> субсидия уменьшилась с 50 до <b>25</b></li>
+<li class="fragment appear">эпоха — 9 июля <b>2016</b> субсидия уменьшилась с 25 до <b>12.5</b></li>
+<li class="fragment appear">эпоха — 11 мая <b>2020</b> субсидия уменьшилась с 12.5 до <b>6.25</b></li>
+<li class="fragment appear">эпоха — <i>апрель <b>2024</b></i> субсидия уменьшится с 6.25 до <b>3.125</b></li>
+<li class="fragment appear">&#x2026;</li>
+
+</ol>
+
+</section>
+<section id="slide-2-4">
+<h3 id="2-4"><span class="section-number-3">2.4</span> Проекция субсидии</h3>
+
+<div class="figure">
+<p><img src="../imgs/block-reward-halving.png" alt="block-reward-halving.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-2-5">
+<h3 id="2-5"><span class="section-number-3">2.5</span> Предложение (запас)</h3>
+
+<div class="figure">
+<p><img src="../imgs/supply-over-block-height.png" alt="supply-over-block-height.png" />
+</p>
+</div>
+<aside class="notes">
+<p>
+Первый раз в истории человечества мы имеем актив, приток которого строго предсказуем
+</p>
+
+</aside>
+
+</section>
+<section id="slide-2-6">
+<h3 id="2-6"><span class="section-number-3">2.6</span> Монетарная инфляция</h3>
+
+<div class="figure">
+<p><img src="../imgs/bitcoin-inflation.png" alt="bitcoin-inflation.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> Запас/приток</h2>
+<p>
+Запас/приток (Stock-to-flow) — отношение количества товара, находящегося в наличии, к количеству добываемого (производимого) за год
+</p>
+
+<p class="fragment (appear)">
+Сколько <i>лет</i> необходимо для <b>удвоения</b> количества товара находящегося в наличии при постоянном притоке
+</p>
+
+</section>
+<section id="slide-3-1">
+<h3 id="3-1"><span class="section-number-3">3.1</span> Сохранение ценности во времени</h3>
+<p>
+Актив с <i>большим</i> значением запас/приток <i>лучше</i> сохраняет ценность во времени
+</p>
+
+</section>
+<section id="slide-3-2">
+<h3 id="3-2"><span class="section-number-3">3.2</span> Запас/приток для биткоина</h3>
+<ul>
+<li>текущее значение <b>27.4</b></li>
+<li>значение в эпохе 2020–2024 <b>56</b></li>
+
+</ul>
+
+</section>
+<section id="slide-3-3">
+<h3 id="3-3"><span class="section-number-3">3.3</span> Примеры</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Актив</th>
+<th scope="col" class="org-right">Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Биткоин</td>
+<td class="org-right">27.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Биткоин 2020–24</td>
+<td class="org-right">56</td>
+</tr>
+
+<tr>
+<td class="org-left">USD</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">RUB</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Серебро</td>
+<td class="org-right">33.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Золото</td>
+<td class="org-right">58.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Недвижимость</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Энергия</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Время</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> Вопросы?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../ext/reveal.js-3.9.2/lib/js/head.min.js"></script>
+<script src="../ext/reveal.js-3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../ext/reveal.js-3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../ext/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
