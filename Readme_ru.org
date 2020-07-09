@@ -11,3 +11,6 @@
 ** Биткоин транзакция
    - Презентация: Биткоин транзакция ([[./03_Transaction_ru/01_Transaction.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/03_Transaction_ru/01_Transaction.html][вид слайдов]])
    - Практика: Обозреватель транзакций ()
+** Биткоин блокчейн
+   - Презентация: Биткоин блокчейн ([[./04_Blockchain_ru/01_Blockchain.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/04_Blockchain_ru/01_Blockchain.html][вид слайдов]])
+   - Практика: Обозреватель блокчейна ()
