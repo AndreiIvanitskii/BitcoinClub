@@ -1,0 +1,78 @@
+#+STARTUP: hidestars
+
+#+TITLE: Bitcoin Monetary Policy
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: July 11, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../imgs/stars.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+* Monetary Policy
+Actions taken by governments to have impact on economic activities, such as /manipulating money supply/ and loans, also by changing interest rate
+
+#+ATTR_REVEAL: :frag (appear)
+/How much money to print/
+
+* Bitcoin Monetary Policy
+** Reward
+ - _Subsidy_ for a block (*6.25* as of July 2020)
+ - Transaction fee
+
+** Subsidy
+ - 50 bitcoin for each block
+ - every 210'000 block (~4 years) the subsidy reduces by factor 2
+ - until it reaches zero
+
+** Halving (Halvening)
+An event in bitcoin mining history when the subsidy is reducing by factor 2
+#+ATTR_REVEAL: :frag (appear)
+ 1. epoch — January 2, *2009* subsidy was *50*
+ 2. epoch — November 28, *2012* subsidy dropped from 50 to *25*
+ 3. epoch — July 9, *2016* subsidy dropped from 25 to *12.5*
+ 4. epoch — May 11, *2020* subsidy dropped from 12.5 to *6.25*
+ 5. epoch — /April *2024*/ subsidy will drop from 6.25 to *3.125*
+ 6. ...
+
+** Subsidy Projection
+[[../imgs/block-reward-halving.png]]
+
+** Stock
+[[../imgs/supply-over-block-height.png]]
+#+BEGIN_NOTES
+The first time in the human history we got an asses with predictable flow
+#+END_NOTES
+
+** Monetary Inflation
+[[../imgs/bitcoin-inflation.png]]
+
+* Stock to Flow (S2F)
+Ratio of amount of some good being in /stock/ to the amount /flowing/ (created or mined) in one year
+
+#+ATTR_REVEAL: :frag (appear)
+How many /years/ is necessary to *double* the amount of good in stock assuming constant flow
+
+** Preserving Value in Time
+An asset with a /higher/ stock-to-flow value /better/ preserves value in time
+
+** Stock-to-flow for Bitcoin
+ - current value *27.4*
+ - in epoch 2020–2024 *56*
+
+** Examples
+| Asset           | S2F Value | Supply    |
+|-----------------+-----------+-----------|
+| Bitcoin         |      27.4 | Limited   |
+| Bitcoin 2020–24 |        56 | Limited   |
+| USD             |           |           |
+| Silver          |      33.3 | Unlimited |
+| Gold            |      58.3 | Unlimited |
+| Real estate     |           |           |
+| Energy          |           |           |
+| Time            |           |           |
+
+* Questions?
