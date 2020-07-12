@@ -31,7 +31,7 @@ Actions taken by governments to have impact on economic activities, such as /man
 ** Halving (Halvening)
 An event in bitcoin mining history when the subsidy is reducing by factor 2
 #+ATTR_REVEAL: :frag (appear)
- 1. epoch — January 2, *2009* subsidy was *50*
+ 1. epoch — January 3, *2009* subsidy was *50*
  2. epoch — November 28, *2012* subsidy dropped from 50 to *25*
  3. epoch — July 9, *2016* subsidy dropped from 25 to *12.5*
  4. epoch — May 11, *2020* subsidy dropped from 12.5 to *6.25*
