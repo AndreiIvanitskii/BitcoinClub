@@ -14,3 +14,6 @@
 ** Биткоин блокчейн
    - Презентация: Биткоин блокчейн ([[./04_Blockchain_ru/01_Blockchain.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/04_Blockchain_ru/01_Blockchain.html][вид слайдов]])
    - Практика: Обозреватель блокчейна ()
+** Монетарная политика биткоина
+   - Презентация: Монетарная политика биткоина ([[./05_Monetary_Policy_ru/01_Monetary_Policy.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/05_Monetary_Policy_ru/01_Monetary_Policy.html][вид слайдов]])
+   - Практика: Оценка запас/приток значения для разных активов ()

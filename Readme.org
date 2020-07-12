@@ -19,3 +19,7 @@ Here are slides and notes from the club meetings.
 ** Bitcoin Blockchain
    - Presentation: Bitcoin Blockchain ([[./04_Blockchain/01_Blockchain.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/04_Blockchain/01_Blockchain.html][presentation view]])
    - Workshop: Blockchain Explorer ()
+
+** Bitcoin Monetary Policy
+   - Presentation: Bitcoin Monetary Policy ([[./05_Monetary_Policy/01_Monetary_Policy.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/05_Monetary_Policy/01_Monetary_Policy.html][presentation view]])
+   - Workshop: Estimate S2F value for different assets ()
