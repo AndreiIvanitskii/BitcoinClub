@@ -2,13 +2,13 @@
 
 #+TITLE: Цена
 #+AUTHOR: Андрей Иваницкий
-#+DATE: 23 июля, 2020
+#+DATE: 23 июля 2020
 
 #+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: ../ext/custom-ru.css
 #+REVEAL_TITLE_SLIDE: ../ext/title-slide-ru.html
-#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../ext/pixabay/club.jpg
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../imgs/charts.jpg
 
 #+OPTIONS: num:t toc:nil reveal_history:t
 
@@ -39,7 +39,7 @@ https://www.blockchain.com/charts/market-price
  - таким образом цена составила *0.04951$*
 
 ** Долларовый паритет
-9 февраля *2001* года цена биткоина достигла одного доллара
+9 февраля *2011* года цена биткоина достигла одного доллара
 
 * Чем определяется
 ** Субсидия за блок
@@ -78,7 +78,7 @@ https://www.reddit.com/r/Jobs4Bitcoins
 *** Защита от инфляции
 Рушащиеся экономики
  - Турция
- - а
+ - Венесуэла
  - Аргентина
  - Ливан
  - Иран
