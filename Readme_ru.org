@@ -17,3 +17,5 @@
 ** Монетарная политика биткоина
    - Презентация: Монетарная политика биткоина ([[./05_Monetary_Policy_ru/01_Monetary_Policy.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/05_Monetary_Policy_ru/01_Monetary_Policy.html][вид слайдов]])
    - Практика: Оценка запас/приток значения для разных активов ()
+** Цена
+   - Презентация: Цена ([[./06_Price_ru/01_Price.org][одностраничный вид]] | [[https://andreiivanitskii.github.io/BitcoinClub/06_Price_ru/01_Price.html][вид слайдов]])

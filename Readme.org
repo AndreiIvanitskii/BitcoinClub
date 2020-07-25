@@ -23,3 +23,5 @@ Here are slides and notes from the club meetings.
 ** Bitcoin Monetary Policy
    - Presentation: Bitcoin Monetary Policy ([[./05_Monetary_Policy/01_Monetary_Policy.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/05_Monetary_Policy/01_Monetary_Policy.html][presentation view]])
    - Workshop: Estimate S2F value for different assets ()
+** Price
+   - Presentation: Price ([[./06_Price/01_Price.org][one page view]] | [[https://andreiivanitskii.github.io/BitcoinClub/06_Price/01_Price.html][presentation view]])
