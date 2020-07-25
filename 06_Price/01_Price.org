@@ -1,0 +1,93 @@
+#+STARTUP: hidestars
+
+#+TITLE: Price
+#+AUTHOR: Andrei Ivanitskii
+#+DATE: July 25, 2020
+
+#+REVEAL_ROOT: ../ext/reveal.js-3.9.2/
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS: ../ext/custom.css
+#+REVEAL_TITLE_SLIDE: ../ext/title-slide.html
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./../imgs/charts.jpg
+
+#+OPTIONS: num:t toc:nil reveal_history:t
+
+* Price
+https://www.blockchain.com/charts/market-price
+
+** Logarithmic Scales
+[[../ext/wikimedia/Logarithmic_Scales-mkII.svg]]
+
+** Price on Logarithmic Scale
+
+* History
+** Collectibles
+
+** First Buy
+ - in October *2009* the first buy of bitcoin
+ - *5'050* bitcoin for *5.02$*
+ - the price was determined by the price of electricity required to mine those bitcoin
+
+** Pizza Day
+ - May 22, *2010*
+ - two pizzas were bought for *10'000* bitcoin
+
+** First Trade on an Exchange
+ - July 17m, *2010* the first trade on Mt. Gox
+ - 20 bitcoin for 0.99$
+ - the price was *0.04951$*
+
+** Dollar Parity
+on February 9, *2011* the price of bitcoin reached one dollar
+
+* What Determines the Price
+** Block Subsidy
+ - every 10 minutes 6.25 bitcoin are mined
+ - 900 bitcoin per day
+#+BEGIN_NOTES
+The majority of the subsidy miners sell for local currencies to pay the bills (electricity, rent, hardware)
+#+END_NOTES
+
+** Medium of Exchange
+*** Pay in Bitcoin
+https://www.reddit.com/r/Jobs4Bitcoins 
+
+*** Transfers Abroad
+
+*** Donations
+*** WikiLeaks
+In 2010 after WikiLeaks had published confidential American documents
+ - Amazon suspended hosting services
+ - PayPal froze their account
+ - Visa, MasterCard blocked transfers
+
+*** Sci-Hub
+#+ATTR_HTML: :height 200;
+[[../ext/wikimedia/Scihub_raven.png]]\\
+
+/"the first pirate website in the world to provide mass and public access to tens of millions of research papers"/
+ - in 2013 PayPal asked to remove PayPal as a donation option
+
+*** gab.com
+#+ATTR_HTML: :height 200;
+[[../imgs/gab.png]]\\
+
+/"Gab.com strives to be the home of free speech online"/
+ - in June 2020 Visa blocked all personal account of Andrew Torba and his family members[fn:1:https://news.gab.com/2020/07/10/the-real-reason-gab-is-persecuted]
+
+** Store of Value
+*** Hedge Against Inflation
+Falling economics
+ - Turkey
+ - Venezuela
+ - Argentina
+ - Lebanon
+ - Iran
+ - ...
+
+*** Hedge Against Fiat Money
+
+* Stock to Flow
+https://digitalik.net/btc/sf_model
+
+* Questions
