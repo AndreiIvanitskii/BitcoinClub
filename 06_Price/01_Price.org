@@ -33,7 +33,7 @@ https://www.blockchain.com/charts/market-price
  - two pizzas were bought for *10'000* bitcoin
 
 ** First Trade on an Exchange
- - July 17m, *2010* the first trade on Mt. Gox
+ - July 17, *2010* the first trade on Mt. Gox
  - 20 bitcoin for 0.99$
  - the price was *0.04951$*
 
@@ -87,7 +87,8 @@ Falling economics
 
 *** Hedge Against Fiat Money
 
-* Stock to Flow
-https://digitalik.net/btc/sf_model
+* Stock to Flow Model
+Original article: [[https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25][Modeling Bitcoin Value with Scarcity]]\\
+[[https://digitalik.net/btc/sf_model][Stock to flow model live chart]]
 
-* Questions
+* Questions?

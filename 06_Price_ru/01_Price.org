@@ -86,7 +86,8 @@ https://www.reddit.com/r/Jobs4Bitcoins
 
 *** Защита от необеспеченных денег
 
-* Запас/приток
-https://digitalik.net/btc/sf_model
+* Запас/приток модель
+Оригинальная статья: [[https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25][Modeling Bitcoin Value with Scarcity]]\\
+[[https://digitalik.net/btc/sf_model][Stock to flow model live chart]]
 
 * Вопросы?
